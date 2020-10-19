@@ -1,12 +1,28 @@
 # GitHub Pages (Jekyll)
 
-Develop static websites with GitHub Pages on Jekyll, includes minimal required set up to get started. In case you were wondering, this source is:
+Develop static websites using GitHub Pages with Jekyll, includes minimal required set up to get started. In case you were wondering, this `.devcontainer` is:
 
-- Extent from [container-templates](https://github.com/microsoft/vscode-dev-containers/tree/master/container-templates)
-- [Uses `jekyll` docker image](https://github.com/envygeeks/jekyll-docker)
-- Supports Ruby and Jekyll
-- Ideal for [GitHub Pages](https://pages.github.com)
+- Based on [@microsoft/vscode-dev-containers](https://github.com/microsoft/vscode-dev-containers)
+- [Uses for [GitHub Pages](https://pages.github.com) built with Jekyll
+- [Uses Jekyll Docker](https://github.com/envygeeks/jekyll-docker) `latest` image
 
 ## Configure
 
-Full-blown configurations are found in VS Code Remote - Containers page.
+Full-blown configurations are found [on VS Code Remote - Containers page](https://code.visualstudio.com/docs/remote/containers) at  VS Code docs is a good source to get started.
+
+### Install Jekyll Plugins
+
+[See Jekyll configuration options](https://jekyllrb.com/docs/configuration/options/#build-command-options) for full-blown options.
+- Add a `Gemfile` with plugins required to the project root
+- Uncomment `postCreateCommand` in the `.devcontainer.json`
+
+### Change the Port
+
+- Change `forwardPorts` property value on `.devcontainer.json`
+- Change the `-P` port mentioned in the `Serve` task on `tasks.json`
+
+### Use Jekyll Configuration Files
+
+[See Jekyll build flags](https://jekyllrb.com/docs/configuration/options/#build-command-options) for full-blown options.
+- Add development specific configuration file under `.devcontainer` folder
+- Add `--config` flag with the configuration file name to the `Serve` task on `tasks.json`
