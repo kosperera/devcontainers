@@ -1,5 +1,5 @@
 {
-	"name": "Dev Container Definition Template - GitHub Pages",
+	"name": "Dev Container Definition Template - GitHub Pages (Jekyll)",
 	// Update the 'image' property with your Docker image name.
 	"image": "jekyll/jekyll:latest",
 	// Set *default* container specific settings.json values on container create.
@@ -8,11 +8,11 @@
 		"terminal.integrated.shell.linux": "/bin/bash"
 	},
 	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": []
+	"extensions": [],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [4000],
 	// Uncomment to run commands after the container is created - requires a Gemfile
-	"postCreateCommand": "bundle install",
+	// "postCreateCommand": "bundle install",
 
 	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
 	// "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
