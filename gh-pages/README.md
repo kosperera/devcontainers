@@ -1,4 +1,4 @@
-# GitHub Pages (Jekyll)
+# Jekyll (GitHub Pages)
 
 Develop static websites using GitHub Pages with Jekyll, includes minimal required set up to get started. In case you were wondering, this `.devcontainer` is:
 
