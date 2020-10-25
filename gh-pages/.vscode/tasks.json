@@ -4,28 +4,18 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Serve",
+            "label": "watch",
             "type": "shell",
-            "dependsOn": "Build",
             
             // See https://jekyllrb.com/docs/configuration/options/#build-command-options
             // for the documentation about jekyll build options
-            "command": "jekyll serve -w -P 4000",
+            "command": "jekyll serve -l -P 4000",
 
             "group": {
                 "kind": "test",
                 "isDefault": true
             },
             "isBackground": true,
-        },
-        {
-            "label": "Build",
-            "type": "shell",
-            "command": "jekyll build",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
         }
    ]
 }
