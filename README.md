@@ -4,7 +4,9 @@
 This repository serves as a flavor of developer containers that are listed [on @microsoft/vscode-dev-containers repository][devcontainers-repo].
 
 ### On this repo
-- `gh-pages` for all things static website development with GitHub Pages and Jekyll
+- [`dotnet`][devcontainer-dotnet] for all things .NET 5.x, Azure, and Node
+- [`dotnetcore`][devcontainer-dotnetcore] for all things .NET Core, Azure, and Node
+- [`gh-pages`][devcontainer-gh-pages] for all things static website development with GitHub Pages and Jekyll
 
 > Read this bliki posts to learn a bit more about this repository's work in use.
 
@@ -28,6 +30,9 @@ Have a suggestion or a bug fix? Just open a pull request or an issue. Include th
 ## License
 License under [MIT][lic]
 
+[devcontainer-dotnet]: ./dotnet
+[devcontainer-dotnetcore]: ./dotnetcore
+[devcontainer-gh-pages]: ./gh-pages 
 [lic]: LICENSE
 [devcontainers-docs]: https://code.visualstudio.com/docs/remote/containers
 [devcontainers-repo]: https://github.com/microsoft/vscode-dev-containers#readme
