@@ -3,29 +3,20 @@
     "tasks": [
         {
             "label": "build",
-            "type": "process",
-            "command": "dotnet build",
-            "args": [
-                // "${workspaceFolder}/test-project/aspnetapp.csproj"
-            ],
+            "type": "shell",
+            "command": "dotnet build ${workspaceFolder}/test-project/aspnetapp.csproj",
             "problemMatcher": "$tsc"
         },
         {
             "label": "publish",
-            "type": "process",
-            "command": "dotnet publish",
-            "args": [
-                // "${workspaceFolder}/test-project/aspnetapp.csproj"
-            ],
+            "type": "shell",
+            "command": "dotnet publish ${workspaceFolder}/test-project/aspnetapp.csproj",
             "problemMatcher": "$tsc"
         },
         {
             "label": "watch",
-            "type": "process",
-            "command": "dotnet watch run",
-            "args": [
-                // "${workspaceFolder}/test-project/aspnetapp.csproj"
-            ],
+            "type": "shell",
+            "command": "dotnet watch -p ${workspaceFolder}/test-project/aspnetapp.csproj run",
             "problemMatcher": "$tsc"
         }
     ]
