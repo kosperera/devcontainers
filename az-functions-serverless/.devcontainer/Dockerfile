@@ -9,4 +9,4 @@ FROM mcr.microsoft.com/azure-functions/node:3.0-node${VARIANT}-core-tools
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
 # [Optional] Uncomment if you want to install more global node modules
-RUN sudo -u node npm i -g serverless
+RUN sudo -u node yarn global add serverless
