@@ -4,8 +4,9 @@
 This repository serves as a flavor of developer containers that are listed [on @microsoft/vscode-dev-containers repository][devcontainers-repo].
 
 ### On this repo
-- [`dotnet`][devcontainer-dotnet] for all things .NET 5.x, Azure, and Node
-- [`dotnetcore`][devcontainer-dotnetcore] for all things .NET Core, Azure, and Node
+- [`az-functions-serverless`][devcontainer-az-funcs-sls] for all things Azure Functions using Serverless Framework on Node.js
+- [`dotnet`][devcontainer-dotnet] for all things .NET 5.x, Azure, and Node.js
+- [`dotnetcore`][devcontainer-dotnetcore] for all things .NET Core, Azure, and Node.js
 - [`gh-pages`][devcontainer-gh-pages] for all things static website development with GitHub Pages and Jekyll
 
 > Read this bliki posts to learn a bit more about this repository's work in use.
@@ -30,6 +31,7 @@ Have a suggestion or a bug fix? Just open a pull request or an issue. Include th
 ## License
 License under [MIT][lic]
 
+[devcontainer-az-funcs-sls]: ./az-functions-serverless
 [devcontainer-dotnet]: ./dotnet
 [devcontainer-dotnetcore]: ./dotnetcore
 [devcontainer-gh-pages]: ./gh-pages 

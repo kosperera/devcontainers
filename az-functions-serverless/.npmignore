@@ -1,0 +1,13 @@
+.devcontainer/
+test-project
+.vscode/
+node_modules
+package
+.cache
+public/
+docs/
+src/
+.npmignore
+.git
+**/*.md
+definition-manifest.json
