@@ -1,7 +1,7 @@
-# [Choice] .NET Core version: latest, 2.1, 3.1, 3.1-focal
-# See full tag list here https://hub.docker.com/_/microsoft-dotnet-core-sdk/
+# [Choice] .NET SDK version: latest, 5.0
+# See full tag list here https://hub.docker.com/_/microsoft-dotnet-sdk/
 ARG VARIANT="latest"
-FROM mcr.microsoft.com/dotnet/core/sdk:${VARIANT}
+FROM mcr.microsoft.com/dotnet/sdk:${VARIANT}
 
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"
@@ -18,7 +18,7 @@ RUN bash /tmp/library-scripts/common-debian.sh "${INSTALL_ZSH}" "${USERNAME}" "$
 
 # [Option] Install Node.js
 ARG INSTALL_NODE="false"
-ARG NODE_VERSION="none"
+ARG NODE_VERSION="12"
 ENV NVM_DIR=/usr/local/share/nvm
 ENV NVM_SYMLINK_CURRENT=true \
     PATH=${NVM_DIR}/current/bin:${PATH}

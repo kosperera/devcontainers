@@ -2,15 +2,15 @@
 	"name": ".NET 5.0+",
 	"build": {
 		"dockerfile": "Dockerfile",
-		"args": { 
-			// Update 'VARIANT' to pick a .NET version: latest, 5.0
-			// See full tag list here https://hub.docker.com/_/microsoft-dotnet-sdk/
-			"VARIANT": "latest",
-			// Options
-			"INSTALL_NODE": "true",
-			"NODE_VERSION": "lts/*",
-			"INSTALL_AZURE_CLI": "true"
-		}
+		// Options
+		// "args": { 
+		// 	// Update 'VARIANT' to pick a .NET version: latest, 5.0
+		// 	// See full tag list here https://hub.docker.com/_/microsoft-dotnet-sdk/
+		// 	"VARIANT": "latest",
+		// 	"INSTALL_NODE": "true",
+		// 	"NODE_VERSION": "14",
+		// 	"INSTALL_AZURE_CLI": "true"
+		// }
 	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
@@ -22,13 +22,13 @@
 		"ms-dotnettools.csharp",
 		"ms-dotnettools.vscode-dotnet-runtime",
 		// Azure
-		"ms-vscode.azurecli",
-		"ms-azuretools.vscode-azurefunctions",
+		// "ms-vscode.azurecli",
+		// "ms-azuretools.vscode-azurefunctions",
 		// Node.js
-		"christian-kohler.npm-intellisense",
-		"eg2.vscode-npm-script",
-		"dbaeumer.vscode-eslint",
-		"redhat.vscode-yaml",
+		// "christian-kohler.npm-intellisense",
+		// "eg2.vscode-npm-script",
+		// "dbaeumer.vscode-eslint",
+		// "redhat.vscode-yaml",
 		// Web
 		"msjsdiag.debugger-for-chrome",
 		"humao.rest-client",

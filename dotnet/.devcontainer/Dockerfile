@@ -18,7 +18,7 @@ RUN bash /tmp/library-scripts/common-debian.sh "${INSTALL_ZSH}" "${USERNAME}" "$
 
 # [Option] Install Node.js
 ARG INSTALL_NODE="false"
-ARG NODE_VERSION="none"
+ARG NODE_VERSION="12"
 ENV NVM_DIR=/usr/local/share/nvm
 ENV NVM_SYMLINK_CURRENT=true \
     PATH=${NVM_DIR}/current/bin:${PATH}
