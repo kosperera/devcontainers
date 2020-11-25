@@ -1,7 +1,10 @@
 # Remote - Containers Definitions
-[<img align="right" alt="JavaScript" width="128rem" src="https://camo.githubusercontent.com/d7ca2d2f898ab4aa4dd312df026ce18ff219e589/68747470733a2f2f6d6963726f736f66742e6769746875622e696f2f7673636f64652d72656d6f74652d72656c656173652f696d616765732f72656d6f74652d657874656e73696f6e7061636b2e706e67"  />][devcontainers-docs]
+[<img align="right" alt="JavaScript" width="128rem" src="https://camo.githubusercontent.com/d7ca2d2f898ab4aa4dd312df026ce18ff219e589/68747470733a2f2f6d6963726f736f66742e6769746875622e696f2f7673636f64652d72656d6f74652d72656c656173652f696d616765732f72656d6f74652d657874656e73696f6e7061636b2e706e67"  />][ms-devcontainers-docs]
 
-This repository serves as a flavor of developer containers that are listed on [@microsoft/vscode-dev-containers][devcontainers-repo].
+This repository serves as a flavor of reusable developer containers that are listed on [@microsoft/vscode-dev-containers][ms-devcontainers-repo].
+
+> ### Important
+> To get started with your own development container, you will want to have a look at [create a dev container page][ms-devcontainers-create-docs] for full-blown instructions.
 
 ## Requirements
 For minimum requirements, you will need followings:
@@ -11,7 +14,6 @@ For minimum requirements, you will need followings:
 - Git
 
 ## Usage
-> [You'll want to have a look at @microsoft/vscode-devcontainers for full-blown instructions.][devcontainers-repo]
 
 | Container | Description
 | --- | ---
@@ -20,22 +22,21 @@ For minimum requirements, you will need followings:
 | `dotnetcore` | .NET Core 3.1 development. Also include Azure and Node.js.
 | `jekyll` | Ideal for GitHub Pages and static website development with Jekyll.
 
+The [vscode-remote-try-*][try-examples-query] repositories may also be of interest if you are looking for complete sample projects.
+
 ## Feedback
 If you have any technical problems with VS Code or Development Containers, you are better off [asking VS Code Support directly][vscode-support], since you'll end up getting a much faster response back that way.
 
 ## Contributing
-> [The official repo to contribute would be @microsoft/vscode-dev-containers][devcontainers-repo].
+The official repo to contribute would be [@microsoft/vscode-dev-containers][ms-devcontainers-repo].
 
 Have a suggestion or a bug fix? Just open a pull request or an issue. Include the development container with a clear folder name and the simplest instructions possible.
 
 ## License
 License under [MIT][lic]
 
-[devcontainer-az-funcs-dotnetcore]: ./az-functions-dotnetcore
-[devcontainer-dotnet]: ./dotnet
-[devcontainer-dotnetcore]: ./dotnetcore
-[devcontainer-jekyll]: ./jekyll 
-[lic]: LICENSE
-[devcontainers-docs]: https://code.visualstudio.com/docs/remote/containers
-[devcontainers-repo]: https://github.com/microsoft/vscode-dev-containers#readme
+[ms-devcontainers-docs]: https://code.visualstudio.com/docs/remote/containers
+[ms-devcontainers-create-docs]: https://code.visualstudio.com/docs/remote/create-dev-container
+[ms-devcontainers-repo]: https://github.com/microsoft/vscode-dev-containers#readme
 [vscode-support]: https://github.com/microsoft/vscode-dev-containers#contributing-and-feedback
+[lic]: LICENSE
