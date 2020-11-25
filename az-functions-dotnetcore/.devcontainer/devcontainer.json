@@ -1,14 +1,18 @@
 {
-    "name": "Azure Functions & C# (.NET Core 3.1)",
+    "name": ".NET Functions v3",
     "dockerComposeFile": "docker-compose.yml",
+    "remoteEnv": {
+        "DOTNET_CLI_TELEMETRY_OPTOUT": "false",
+        "DOTNET_NOLOGO": "false",
+    },
     "service": "app",
     "workspaceFolder": "/workspace",
 
-    "forwardPorts": [7071, 10000, 10001],
+    "forwardPorts": [7071, 10000, 10001, 10002],
 
     // Set *default* container specific settings.json values on container create.
     "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+        "terminal.integrated.shell.linux": "/bin/zsh"
     },
 
     // Add the IDs of extensions you want installed when the container is created.
@@ -18,23 +22,18 @@
         "ms-dotnettools.vscode-dotnet-runtime",
         // Azure
         "ms-vscode.azurecli",
+        "ms-azuretools.vscode-docker",
         "ms-azuretools.vscode-azurefunctions",
-        // Azure Storage
         "ms-azuretools.vscode-azurestorage",
-        // Node.js
-        // "christian-kohler.npm-intellisense",
-        // "eg2.vscode-npm-script",
-        // "dbaeumer.vscode-eslint",
-        // "redhat.vscode-yaml",
-        // Web
-        "msjsdiag.debugger-for-chrome",
         "humao.rest-client",
         // Editor
-        "editorconfig.editorconfig",
-        "coenraads.bracket-pair-colorizer-2",
-        "esbenp.prettier-vscode",
         "visualstudioexptteam.vscodeintellicode",
-        "redhat.fabric8-analytics"
+        "ms-vscode.wordcount",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "redhat.fabric8-analytics",
+        "redhat.vscode-yaml"
     ],
 
     // Use 'postCreateCommand' to run commands after the container is created.

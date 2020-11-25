@@ -32,10 +32,10 @@ services:
   azurite:
     image: mcr.microsoft.com/azure-storage/azurite:latest
     restart: unless-stopped
-    volumes:
-      - storage-azure:/data
+    # volumes:
+    #   - storage-azure:/data
 
     # Adding the "ports" property to this file will not forward from a Codespace.
 
-volumes:
-  storage-azure:
+# volumes:
+#   storage-azure:
