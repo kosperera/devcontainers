@@ -6,16 +6,9 @@ This repository serves as a flavor of reusable developer containers that are lis
 > #### Important
 > To get started with your own development container, you will want to have a look at [create a dev container page][ms-devcontainers-create-docs] for full-blown instructions.
 
-## Requirements
-For [minimal set of tools to get started][ms-devcontainers-min-requirements-page], you will need followings:
+## Containers
 
-- [VS Code][download-vscode] with [Remote - Containers extension][download-vscode-remote-ext]
-- [Docker Desktop][download-docker-desktop]
-- [Git][download-git]
-
-## Contents
-
-| Container | Description
+|     | Description
 | --- | ---
 | `az-functions-dotnetcore` | Ideal for Azure Functions v3 event-driven development. Also includes Core Tools, .NET Core 3.1, and Azurite Emulator.
 | `dotnet` | Ideal for the .NET 5.x development. Also includes Azure and Node.js.
@@ -23,6 +16,13 @@ For [minimal set of tools to get started][ms-devcontainers-min-requirements-page
 | `jekyll` | Ideal for GitHub Pages and static website development with Jekyll.
 
 The [vscode-remote-try-*][vscode-remote-try-search-query] repositories may also be of interest if you are looking for complete sample projects.
+
+## Requirements
+For [minimal set of tools to get started][ms-devcontainers-min-requirements-page], you will need followings:
+
+- [VS Code][download-vscode] with [Remote - Containers extension][download-vscode-remote-ext]
+- [Docker Desktop][download-docker-desktop]
+- [Git][download-git]
 
 ## Feedback
 If you have any technical problems with VS Code or Development Containers, you are better off [asking VS Code Support directly][vscode-support], since you'll end up getting a much faster response back that way.
