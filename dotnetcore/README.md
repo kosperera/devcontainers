@@ -1,20 +1,22 @@
-# .NET Core 3.1+
+# .NET Core (C#)
+[<img align="right" alt=".NET" width="128rem" src="https://raw.githubusercontent.com/github/explore/93d8a67084f94b2a444e510199a6e7622e5b09a3/topics/dotnet/dotnet.png" />][dotnet-core-resources]
 
-Develop in .NET Core, includes minimal required set up to get started. In case you were wondering, this `.devcontainer` is:
+Develop .NET Core apps in C#. This definition includes:
+- [.NET Core latest SDK and runtime][dotnet-core-docs]
+- Azure SDK with CLI Tools, 
+- [Azure Tools extensions][ms-azure-vscode-extensions] for VS Code, and
+- [Node.js][nodejs-docs] with NPM and Yarn package managers
 
-- Based on `dotnetcore` development container found in [@microsoft/vscode-dev-containers][devcontainers-repo]
-- Ideal for [.NET Core][dotnet-core-sdk-docker-image] with .NET Core, .NET Core CLI, and ASP.NET Core, and
-- Includes with [Azure CLI][az-cli-docs] and [Node.js][node-js-docs]
+## Requirements
+You will want to have a look at the [minimal set of tools to get started][devcontainers-requirements].
 
-## Configuration Options
+## Using This Definition
+This definition has the same capabilities as [dotnet definition][devcontainer-dotnet] except this is on .NET Core. Check out the [vscode-remote-try-*][vscode-remote-try-search-query] repositories if you are looking for complete sample projects.
 
-- [The VS Code Remote - Containers docs][vscode-remote-docs] is a good source to learn more about `.devcontainer.json` configuration options and its usage.
-- [See .NET Core CLI page][dotnet-core-cli-docs] to learn the full-blown `dotnet` options.
-
-[devcontainers-repo]: https://github.com/microsoft/vscode-dev-containers
-[dotnet-core-sdk-docker-image]: https://hub.docker.com/_/microsoft-dotnet-core-sdk/
-[az-cli-docs]: https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli
-[node-js-docs]: https://nodejs.dev/learn
-[vscode-remote-docs]: https://code.visualstudio.com/docs/remote/containers
-[dotnet-core-cli-docs]: https://docs.microsoft.com/en-us/dotnet/core/tools/
-
+[dotnet-core-resources]: https://
+[dotnet-core-docs]: https://
+[ms-azure-vscode-extensions]: /.devcontainer/devcontainer.json
+[devcontainer-dotnet]: ../dotnet/#readme
+[devcontainers-requirements]: https://github.com/kosalanuwan/devcontainers/#readme
+[nodejs-docs]: https://
+[vscode-remote-try-search-query]: https://github.com/search?o=desc&q=vscode-remote-try-&s=updated&type=repositories
