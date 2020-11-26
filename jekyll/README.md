@@ -1,19 +1,20 @@
 # Jekyll (GitHub Pages)
+[<img align="right" alt=".NET" width="128rem" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jekyll/jekyll.png" />][jekyll-resources]
 
-Develop static websites using GitHub Pages with Jekyll, includes minimal required set up to get started. In case you were wondering, this `.devcontainer` is:
+Develop [GitHub Pages][gh-pages-docs] and static websites in Jekyll. This definition includes:
+- [Jekyll][jekyll-cli-docs] with Ruby
+- [Node.js][nodejs-docs] with NPM and Yarn package managers
 
-- Based on [@microsoft/vscode-dev-containers][devcontainers-repo]
-- Uses for [GitHub Pages][gh-pages-docs] built with Jekyll
-- Uses [Jekyll Docker][jekyll-docker-repo] image with `:latest` tag
+## Requirements
+You will want to have a look at the [minimal set of tools to get started][devcontainers-requirements].
 
-## Configuration Options
+## Using This Definition
+This definition is a flavor of [jekyll definition found in @microsoft/devcontainers][ms-devcontainer-jekyll] except the docker image. Check out the [vscode-remote-try-*][vscode-remote-try-search-query] repositories if you are looking for complete sample projects.
 
-- [The VS Code Remote - Containers docs][vscode-remote-docs] is a good source to learn more about `.devcontainer.json` configuration options and its usage.
-- [See Jekyll configuration options page][jekyll-cli-docs] to learn the full-blown `_config.yml` options and `jekyll` build options.
-
-
-[devcontainers-repo]: https://github.com/microsoft/vscode-dev-containers
+[jekyll-resources]: https://github.com/topics/jekyll?l=ruby
 [gh-pages-docs]: https://guides.github.com/features/pages/
-[jekyll-docker-repo]: https://github.com/envygeeks/jekyll-docker
-[vscode-remote-docs]: https://code.visualstudio.com/docs/remote/containers
 [jekyll-cli-docs]: https://jekyllrb.com/docs/configuration/options/#build-command-options
+[nodejs-docs]: https://
+[devcontainers-requirements]: https://github.com/kosalanuwan/devcontainers/#readme
+[ms-devcontainer-jekyll]: https://github.com/microsoft/vscode-dev-containers/tree/master/containers/jekyll
+[vscode-remote-try-search-query]: https://github.com/search?o=desc&q=vscode-remote-try-&s=updated&type=repositories

@@ -11,11 +11,12 @@ Develop .NET apps in C#. This definition includes:
 You will want to have a look at the [minimal set of tools to get started][devcontainers-requirements].
 
 ## Using This Definition
-Check out the [vscode-remote-try-*][vscode-remote-try-search-query] repositories if you are looking for complete sample projects.
+This definition has the same capabilities as [dotnet definition][devcontainer-dotnet-core] except the .NET SDK and runtime version. Check out the [vscode-remote-try-*][vscode-remote-try-search-query] repositories if you are looking for complete sample projects.
 
 [dotnet-5-resources]: https://youtu.be/o-esVzL3YLI
 [dotnet-5-compatibility]: https://docs.microsoft.com/en-us/dotnet/core/compatibility/5.0
 [ms-azure-vscode-extensions]: /.devcontainer/devcontainer.json
+[devcontainer-dotnet-core]: ../dotnetcore/#readme
 [devcontainers-requirements]: https://github.com/kosalanuwan/devcontainers/#readme
 [nodejs-docs]: https://
 [vscode-remote-try-search-query]: https://github.com/search?o=desc&q=vscode-remote-try-&s=updated&type=repositories
