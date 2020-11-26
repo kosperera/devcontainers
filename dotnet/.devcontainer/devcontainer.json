@@ -1,46 +1,44 @@
 {
-	"name": ".NET 5.0+",
-	"build": {
-		"dockerfile": "Dockerfile",
-		// Options
-		// "args": { 
-		// 	// Update 'VARIANT' to pick a .NET version: latest, 5.0
-		// 	// See full tag list here https://hub.docker.com/_/microsoft-dotnet-sdk/
-		// 	"VARIANT": "latest",
-		// 	"INSTALL_NODE": "true",
-		// 	"NODE_VERSION": "14",
-		// 	"INSTALL_AZURE_CLI": "true"
-		// }
-	},
+	"name": ".NET 5",
+    "dockerComposeFile": "docker-compose.yml",
+    "remoteEnv": {
+        "DOTNET_CLI_TELEMETRY_OPTOUT": "false",
+        "DOTNET_NOLOGO": "false",
+    },
+    "service": "app",
+    "workspaceFolder": "/workspace",
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [5000, 5001],
+
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"terminal.integrated.shell.linux": "/bin/bash"
+        "terminal.integrated.shell.linux": "/bin/zsh"
 	},
+
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		// .NET
 		"ms-dotnettools.csharp",
 		"ms-dotnettools.vscode-dotnet-runtime",
 		// Azure
-		// "ms-vscode.azurecli",
-		// "ms-azuretools.vscode-azurefunctions",
+        "ms-vscode.azurecli",
+        "ms-azuretools.vscode-docker",
+        "ms-azuretools.vscode-azurefunctions",
+        "ms-azuretools.vscode-azurestorage",
+        "humao.rest-client",
 		// Node.js
-		// "christian-kohler.npm-intellisense",
-		// "eg2.vscode-npm-script",
-		// "dbaeumer.vscode-eslint",
-		// "redhat.vscode-yaml",
-		// Web
-		"msjsdiag.debugger-for-chrome",
-		"humao.rest-client",
+		"christian-kohler.npm-intellisense",
+		"eg2.vscode-npm-script",
+		"dbaeumer.vscode-eslint",
 		// Editor
-		"editorconfig.editorconfig",
-		"coenraads.bracket-pair-colorizer-2",
-		"esbenp.prettier-vscode",
-		"visualstudioexptteam.vscodeintellicode",
-		"redhat.fabric8-analytics",
+        "visualstudioexptteam.vscodeintellicode",
+        "ms-vscode.wordcount",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker",
+        "redhat.fabric8-analytics",
+		"redhat.vscode-yaml",
 	],
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5000, 5001],
 
 	// [Optional] To reuse of your local HTTPS dev cert:
 	//
@@ -68,8 +66,8 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
 
-	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "vscode",
-	// Uncomment to indicates whether VS Code should stop the containers when the VS Code window is closed / shut down. Values are "none" and "stopCompose" (default).
-	// "shutdownAction": "none",
+    // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+    "remoteUser": "vscode",
+    // Uncomment to indicates whether VS Code should stop the containers when the VS Code window is closed / shut down. Values are "none" and "stopCompose" (default).
+    "shutdownAction": "stopCompose",
 }
