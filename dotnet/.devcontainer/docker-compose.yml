@@ -5,41 +5,55 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-      # [Optional] You can use build args to set options. e.g. 'INSTALL_ZSH' below affects the image in the Dockerfile
-      args: 
-        VARIANT: "latest"
-        INSTALL_ZSH: "true"
-        UPGRADE_PACKAGES: "true"
-        INSTALL_NODE: "false"
-        NODE_VERSION: 12
-        INSTALL_AZURE_CLI: "false"
-        
-    volumes:
-      # Forwards the local Docker socket to the container.
-      # - /var/run/docker.sock:/var/run/docker-host.sock 
-      # Mounts the project folder to '/workspace'. While this file is in .devcontainer,
-      # mounts are relative to the first file in the list, which is a level up.
-      - ..:/workspace:cached
+      args:
+        # [Choice] Update 'VARIANT' to pick a .NET Core version: 2.1, 3.1, 5.0
+        VARIANT: 3.1
+        # Options
+        INSTALL_NODE: "true"
+        NODE_VERSION: "14"
+        INSTALL_AZURE_CLI: "true"
+        # On Linux, you may need to update USER_UID and USER_GID below if not your local UID is not 1000.
+        USER_UID: 1000
+        USER_GID: 1000
 
+    volumes:
+      - ..:/workspace:cached
+      
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
 
     # Runs app on the same network as the database container, allows "forwardPorts" in devcontainer.json function.
-    # network_mode: service:azurite
+    network_mode: host
 
     # Uncomment the next line to use a non-root user for all processes.
-    # user: node
+    # user: vscode
 
     # Use "forwardPorts" in **devcontainer.json** to forward an app port locally. 
     # (Adding the "ports" property to this file will not forward from a Codespace.)
 
-  # azurite:
-  #   image: mcr.microsoft.com/azure-storage/azurite:latest
-  #   restart: unless-stopped
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    restart: unless-stopped
+    environment:
+      SA_PASSWORD: P@ssw0rd
+      ACCEPT_EULA: Y
+      # MSSQL_PID: Express
+    network_mode: host
+
+    # Add "forwardPorts": ["1433"] to **devcontainer.json** to forward MSSQL locally.
+    # (Adding the "ports" property to this file will not forward from a Codespace.)
+
+  storage:
+    image: mcr.microsoft.com/azure-storage/azurite:latest
+    restart: unless-stopped
     # volumes:
-    #   - storage-azure:/data
+    #   - storage-data:/data
+    network_mode: host
 
-    # Adding the "ports" property to this file will not forward from a Codespace.
+volumes:
+  storage-data:
 
-# volumes:
-#   storage-azure:
+# networks:
+#   default:
+#     external:
+#       name: bridge

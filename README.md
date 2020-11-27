@@ -11,8 +11,7 @@ This repository serves as a flavor of reusable developer containers that are lis
 |     | Description
 | --- | ---
 | `az-functions-dotnetcore` | Ideal for Azure Functions v3 event-driven development. Also includes Core Tools, .NET Core 3.1, and Azurite Emulator.
-| `dotnet` | Ideal for the .NET 5.x development. Also includes Azure and Node.js.
-| `dotnetcore` | .NET Core 3.1 development. Also include Azure and Node.js.
+| `dotnet` | Ideal for the .NET development. Also includes MSSQL, Azure, Azurite, and Node.js.
 | `jekyll` | Ideal for GitHub Pages and static website development with Jekyll.
 
 The [vscode-remote-try-*][vscode-remote-try-search-query] repositories may also be of interest if you are looking for complete sample projects.
