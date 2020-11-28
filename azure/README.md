@@ -1,4 +1,4 @@
-# Azure Functions v3
+# Azure
 [<img align="right" alt="Azure Functions" width="128rem" src="https://raw.githubusercontent.com/Azure/azure-functions-core-tools/master/src/Azure.Functions.Cli/npm/assets/azure-functions-logo-color-raster.png" />][az-funcs-docs]
 
 Develop azure functions in C#. This definition includes:

@@ -3,9 +3,8 @@
 
 Develop .NET apps in C#. This definition includes:
 - [.NET SDK and runtime][dotnet-compatibility] - version 2.1, 3.1, or 5.0
-- Azure SDK and CLI tools
+- Azure CLI tools for publishing and managing cloud resources
 - [MS SQL 2019][mssql-docker] databases
-- [Azurite][azurite-docs] as for Azure Storage Emulator
 - [NVM][nvm-docs] for running multiple Node.js versions, and
 - [Node.js][nodejs-docs] with NPM and Yarn package managers
 

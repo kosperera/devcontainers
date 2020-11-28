@@ -2,35 +2,46 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "clean",
+            "command": "dotnet",
+            "args": ["clean", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary"],
+            "type": "process",
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "build",
             "command": "dotnet",
+            "args": ["build", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary"],
             "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/test-project/aspnetapp.csproj"
-            ],
-            "problemMatcher": "$tsc"
+            "dependsOn": "clean",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "clean release",
+            "command": "dotnet",
+            "args": ["clean", "--configuration", "Release", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary"],
+            "type": "process",
+            "problemMatcher": "$msCompile"
         },
         {
             "label": "publish",
             "command": "dotnet",
+            "args": ["publish", "--configuration", "Release", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary"],
             "type": "process",
-            "args": [
-                "publish",
-                "${workspaceFolder}/test-project/aspnetapp.csproj"
-            ],
-            "problemMatcher": "$tsc"
+            "dependsOn": "clean release",
+            "problemMatcher": "$msCompile"
         },
         {
             "label": "watch",
             "command": "dotnet",
             "type": "process",
-            "args": [
-                "watch",
-                "run",
-                "${workspaceFolder}/test-project/aspnetapp.csproj"
-            ],
-            "problemMatcher": "$tsc"
+            "args": ["watch", "run", "${workspaceFolder}/test-project/aspnetapp.csproj"],
+            "problemMatcher": "$msCompile",
+            "isBackground": true
         }
     ]
 }

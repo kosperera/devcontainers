@@ -20,7 +20,6 @@
 				"profileName": "mssql-container",
 			},
 		],
-		"azurite.debug": true,
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
@@ -32,7 +31,6 @@
 		"humao.rest-client",
 
 		"ms-mssql.mssql",
-		"ms-azuretools.vscode-azurestorage",
 
 		"christian-kohler.npm-intellisense",
 		"eg2.vscode-npm-script",
@@ -48,7 +46,7 @@
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5000, 5001, 1433, 10000, 10001, 10002],
+	"forwardPorts": [5000, 5001, 1433],
 
 	// [Optional] To reuse of your local HTTPS dev cert:
 	//
