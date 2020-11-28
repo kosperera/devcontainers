@@ -50,8 +50,8 @@ services:
     #   - storage-data:/data
     network_mode: host
 
-volumes:
-  storage-data:
+# volumes:
+#   storage-data:
 
 # networks:
 #   default:
