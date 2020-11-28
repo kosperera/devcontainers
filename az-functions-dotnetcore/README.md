@@ -3,9 +3,9 @@
 
 Develop azure functions in C#. This definition includes:
 - .NET Core 3.1 SDK and runtime
-- Azure Functions SDK with Core Tools
-- [Azure Tools extensions][ms-azure-vscode-extensions] for VS Code, and
-- [Azurite Emulator][azurite-docs] as for Azure Storage Emulator
+- Azure Functions SDK with Core Tools - runtime v3
+- Azure SDK and CLI tools
+- [Azurite][azurite-docs] as for Azure Storage Emulator
 
 ## Requirements
 You will want to have a look at the [minimal set of tools to get started][devcontainers-requirements]. This definition requires followings:
@@ -17,7 +17,6 @@ You will want to have a look at the [minimal set of tools to get started][devcon
 Check out the [vscode-remote-try-*][vscode-remote-try-search-query] repositories if you are looking for complete sample projects.
 
 [az-funcs-docs]: https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-csharp?tabs=azure-cli%2Cbrowser
-[ms-azure-vscode-extensions]: /.devcontainer/devcontainer.json
 [azurite-docs]: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-the-azurite-docker-image
 [devcontainers-requirements]: https://github.com/kosalanuwan/devcontainers/#readme
 [ms-azure-signup]: https://
