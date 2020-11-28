@@ -1,6 +1,0 @@
-{
-    "azureFunctions.projectLanguage": "C#",
-    "azureFunctions.projectRuntime": "~3",
-    "debug.internalConsoleOptions": "neverOpen",
-    "azureFunctions.preDeployTask": "publish",
-}
