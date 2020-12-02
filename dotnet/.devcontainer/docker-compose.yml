@@ -12,6 +12,7 @@ services:
         INSTALL_NODE: "true"
         NODE_VERSION: "14"
         INSTALL_AZURE_CLI: "true"
+        INSTALL_MSSQL: "true"
         # On Linux, you may need to update USER_UID and USER_GID below if not your local UID is not 1000.
         USER_UID: 1000
         USER_GID: 1000
