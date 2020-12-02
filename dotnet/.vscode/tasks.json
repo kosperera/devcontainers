@@ -39,7 +39,7 @@
             "label": "watch",
             "command": "dotnet",
             "type": "process",
-            "args": ["watch", "run", "${workspaceFolder}/test-project/aspnetapp.csproj"],
+            "args": ["watch", "--project", "${workspaceFolder}/test-project/aspnetapp.csproj", "run"],
             "problemMatcher": "$msCompile",
             "isBackground": true
         }
