@@ -4,9 +4,11 @@ source 'https://rubygems.org'
 gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
-#   gem "jekyll"
+  # gem "jekyll"
+  gem 'github-pages'
   gem 'jemoji'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'
   gem 'jekyll-redirect-from'
+  gem 'jekyll-remote-theme'
 end
