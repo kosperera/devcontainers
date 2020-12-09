@@ -1,0 +1,8 @@
+url: http://localhost:4000
+baseurl: "jekyll"
+repository: kosalanuwan/devcontainer
+
+# Build settings
+show_drafts: true
+future: true
+unpublished: true

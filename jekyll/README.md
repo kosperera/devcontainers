@@ -2,8 +2,8 @@
 [<img align="right" alt=".NET" width="128rem" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jekyll/jekyll.png" />][jekyll-resources]
 
 Develop [GitHub Pages][gh-pages-docs] and static websites in Jekyll. This definition includes:
-- [Jekyll][jekyll-cli-docs] with Ruby
-- [Node.js][nodejs-docs] with NPM and Yarn package managers
+- Ruby and Bundler
+- [Jekyll][jekyll-cli-docs]
 
 ## Requirements
 You will want to have a look at the [minimal set of tools to get started][devcontainers-requirements].
