@@ -4,7 +4,7 @@
 Develop [GitHub Pages][gh-pages-docs] and static websites in Jekyll. This definition includes:
 - Ruby and Bundler
 - [Jekyll][jekyll-cli-docs]
-- Hot reload and and trace logs for build and run locally with [VS Code tasks][vscode-tasks]
+- Configured to build and run locally with [VS Code tasks][vscode-tasks]
 
 ## Requirements
 You will want to have a look at the [minimal set of tools to get started][devcontainers-requirements].
