@@ -9,7 +9,7 @@ Develop [GitHub Pages][gh-pages-docs] and static websites in Jekyll. This defini
 You will want to have a look at the [minimal set of tools to get started][devcontainers-requirements].
 
 ## Using This Definition
-This definition is a flavor of [jekyll definition found in @microsoft/devcontainers][ms-devcontainer-jekyll] except the docker image. Check out the [vscode-remote-try-*][vscode-remote-try-search-query] repositories if you are looking for complete sample projects.
+This definition is a flavor of [jekyll definition found in @microsoft/devcontainers][ms-devcontainer-jekyll] with minor tweaks for personal use. Check out the [vscode-remote-try-*][vscode-remote-try-search-query] repositories if you are looking for complete sample projects.
 
 [jekyll-resources]: https://github.com/topics/jekyll?l=ruby
 [gh-pages-docs]: https://guides.github.com/features/pages/
