@@ -15,14 +15,14 @@ With VS Code:
 - Run task: `watch` to run the app in watch mode
 
 ### Connecting to sql server
-This definition is [configured to host MS SQL 2019][mssql-docker] and [the VS Code extension SQL Server][mssql-vscode-extension] to manage databases.
+This definition is configured to [hosts MS SQL 2019][mssql-docker] and the VS Code is configured with [SQL Server extension][mssql-vscode-extension] to manage databases.
 
-- You will want to add below connection string to the `appsettings.json`.
-```json
-"ConnectionStrings": {
-    "DefaultConnection": "Server=localhost,1433;Database=ApplicationDB;User Id=sa;Password=P@ssw0rd"
-},
-```
+- You will want to add below connection string to the `appsettings.json`
+    ```json
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost,1433;Database=ApplicationDB;User Id=sa;Password=P@ssw0rd"
+    }
+    ```
 
 
 ### Debugging
