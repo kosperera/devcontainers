@@ -14,10 +14,10 @@ With VS Code:
 - Run task: `build` to restore dependencies, then build the solution
 - Run task: `watch` to run the app in watch mode
 
-## Debugging
-You will want to attach the processor to debug the code.
+### Debugging the source
+VS Code is configured to prompt the processor to attach when debugging the code.
 
-## Connect to SQL Server
+## Database
 This definition is configured to [hosts MS SQL 2019][mssql-docker] and the VS Code is configured with [SQL Server extension][mssql-vscode-extension] to manage databases.
 
 - You will want to add below connection string to the `appsettings.json`
