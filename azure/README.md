@@ -15,11 +15,27 @@ This definition requires followings:
 
 ## Build and Run
 With VS Code:
-- `tasks.json`: Change the start up project path in `func start` task
-- Run task: `func start` to run the azure function in watch mode
+- Create a `local.settings.json`, if doesn't exist.
+- `tasks.json`: Change the start up project path in `func start` task.
+- Run task: `func start` to run the azure function in watch mode.
 
-### Debugging
-You will want to attach the processor to debug the code.
+### Debugging the source
+VS Code is configured to prompt the processor to attach when debugging the code.
+
+### Connecting to emulator
+Add the usual connection string to the `local.settings.json`:
+```json
+"AzureWebJobsStorage": "UseDevelopmentStorage=true;"
+```
+With Local Emulator:
+```json
+"AzureWebJobsStorage": "UseDevelopmentStorage=true;DevelopmentStorageProxyUri=http://host.docker.internal"
+```
+
+## License
+Copyright :copyright: Kosala Nuwan Perera. All rights reserved.
+
+The source code is license under the [MIT license][lic].
 
 [az-funcs-docs]: https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-csharp?tabs=azure-cli%2Cbrowser
 [azurite-docs]: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-the-azurite-docker-image
@@ -28,3 +44,4 @@ You will want to attach the processor to debug the code.
 [ms-azure-devops-signup]: https://
 [download-azure-storage-explorer]: https://
 [vscode-remote-try-search-query]: https://github.com/search?o=desc&q=vscode-remote-try-&s=updated&type=repositories
+[lic]: ../LICENSE

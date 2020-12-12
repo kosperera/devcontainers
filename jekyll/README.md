@@ -12,6 +12,11 @@ You will want to have a look at the [minimal set of tools to get started][devcon
 ## Using This Definition
 This definition is a flavor of [jekyll definition found in @microsoft/devcontainers][ms-devcontainer-jekyll] with minor tweaks for personal use. Check out the [vscode-remote-try-*][vscode-remote-try-search-query] repositories if you are looking for complete sample projects.
 
+## License
+Copyright :copyright: Kosala Nuwan Perera. All rights reserved.
+
+The source code is license under the [MIT license][lic].
+
 [jekyll-resources]: https://github.com/topics/jekyll?l=ruby
 [gh-pages-docs]: https://guides.github.com/features/pages/
 [jekyll-cli-docs]: https://jekyllrb.com/docs/configuration/options/#build-command-options
@@ -20,3 +25,4 @@ This definition is a flavor of [jekyll definition found in @microsoft/devcontain
 [devcontainers-requirements]: https://github.com/kosalanuwan/devcontainers/#readme
 [ms-devcontainer-jekyll]: https://github.com/microsoft/vscode-dev-containers/tree/master/containers/jekyll
 [vscode-remote-try-search-query]: https://github.com/search?o=desc&q=vscode-remote-try-&s=updated&type=repositories
+[lic]: ../LICENSE

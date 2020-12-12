@@ -17,15 +17,20 @@ With VS Code:
 ### Debugging the source
 VS Code is configured to prompt the processor to attach when debugging the code.
 
-## Database
+### Connecting to database
 This definition is configured to [hosts MS SQL 2019][mssql-docker] and the VS Code is configured with [SQL Server extension][mssql-vscode-extension] to manage databases.
 
-- You will want to add below connection string to the `appsettings.json`
-    ```json
-    "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost,1433;Database=ApplicationDB;User Id=sa;Password=P@ssw0rd"
-    }
-    ```
+Add below connection string to the `appsettings.json`
+```json
+"ConnectionStrings": {
+    "DefaultConnection": "Server=localhost,1433;Database=ApplicationDB;User Id=sa;Password=P@ssw0rd"
+}
+```
+
+## License
+Copyright :copyright: Kosala Nuwan Perera. All rights reserved.
+
+The source code is license under the [MIT license][lic].
 
 [dotnet-resources]: https://youtu.be/o-esVzL3YLI
 [dotnet-compatibility]: https://docs.microsoft.com/en-us/dotnet/core/compatibility/5.0
@@ -34,3 +39,4 @@ This definition is configured to [hosts MS SQL 2019][mssql-docker] and the VS Co
 [nodejs-docs]: https://
 [devcontainers-requirements]: https://github.com/kosalanuwan/devcontainers/#readme
 [vscode-remote-try-search-query]: https://github.com/search?o=desc&q=vscode-remote-try-&s=updated&type=repositories
+[lic]: ../LICENSE
