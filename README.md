@@ -16,6 +16,12 @@ The [vscode-remote-try-*][vscode-remote-try-search-query] repositories may also 
 ## Requirements
 Check out the [system requirements page][ms-devcontainers-min-requirements-page] for a minimal set of tools to get started.
 
+### `.devcontainer`
+These development containers use `docker-compose` to spawn container instances. Check out the `docker-compose.yml` to learn full-blown configurations.
+
+### `.vscode`
+These development containers are configured to build and run the source within VS Code. Check out the `tasks.json` to learn more.
+
 ## Using Containers
 
 Using a development container is easy as copying the content into the project root, and:
@@ -25,12 +31,6 @@ With VS Code:
 - Run command: `Rebuild and Reopen in Container`
 
 > To get started with your own development container, you will want to have a look at [create a dev container page][ms-devcontainers-create-docs] for full-blown instructions.
-
-### `.devcontainer`
-These are configured to use `docker-compose` to spawn development container. Check out the `docker-compose.yml` to learn full-blown configurations.
-
-### `.vscode`
-These development containers are configured to build and run the source within VS Code. Check out the `tasks.json` to learn more.
 
 ## Feedback
 If you have any technical problems with VS Code or Development Containers, you are better off [asking VS Code Support directly][vscode-support], since you'll end up getting a much faster response back that way.
