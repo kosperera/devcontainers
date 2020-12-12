@@ -13,8 +13,13 @@ This definition requires followings:
 - Azure Subscription, create a [free account][ms-azure-signup] if you don't.
 - Azure DevOps Subscription, create a [free account][ms-azure-devops-signup] if you don't.
 
-> #### Important!
-> You will want to run and attach the processor to debug the code.
+## Build and Run
+With VS Code:
+- `tasks.json`: Change the start up project path in `func start` task
+- Run task: `func start` to run the azure function in watch mode
+
+### Debugging
+You will want to attach the processor to debug the code.
 
 [az-funcs-docs]: https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-csharp?tabs=azure-cli%2Cbrowser
 [azurite-docs]: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-the-azurite-docker-image
