@@ -8,13 +8,13 @@ Develop azure functions in C#. This definition includes:
 - Azure SDK and CLI tools
 
 ## Requirements
-You will want to have a look at the [minimal set of tools to get started][devcontainers-requirements]. This definition requires followings:
+This definition requires followings:
 - [Storage Explorer][download-azure-storage-explorer]
 - Azure Subscription, create a [free account][ms-azure-signup] if you don't.
 - Azure DevOps Subscription, create a [free account][ms-azure-devops-signup] if you don't.
 
-## Using This Definition
-Check out the [vscode-remote-try-*][vscode-remote-try-search-query] repositories if you are looking for complete sample projects.
+> #### Important!
+> You will want to run and attach the processor to debug the code.
 
 [az-funcs-docs]: https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-csharp?tabs=azure-cli%2Cbrowser
 [azurite-docs]: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-the-azurite-docker-image
