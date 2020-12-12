@@ -3,6 +3,10 @@
 
 This repository serves as a flavor of reusable developer containers that are listed on [@microsoft/vscode-dev-containers][ms-devcontainers-repo].
 
+The [vscode-remote-try-*][vscode-remote-try-search-query] repositories may also be of interest if you are looking for complete sample projects.
+
+To get started with your own development container, you will want to have a look at [create a dev container page][ms-devcontainers-create-docs] for full-blown instructions.
+
 ## Containers
 
 |     | Description
@@ -10,8 +14,6 @@ This repository serves as a flavor of reusable developer containers that are lis
 | `azure` | Azure Functions for event-driven development. Also includes Core Tools, .NET Core 3.1, and Azurite Emulator.
 | `dotnet` | Ideal for the .NET development. Also includes MSSQL, Node.js, and Azure CLI to managing cloud resources.
 | `jekyll` | Ideal for GitHub Pages and static website development with Jekyll.
-
-The [vscode-remote-try-*][vscode-remote-try-search-query] repositories may also be of interest if you are looking for complete sample projects.
 
 ## Requirements
 Check out the [system requirements page][ms-devcontainers-min-requirements-page] for a minimal set of tools to get started.
@@ -29,8 +31,6 @@ Using a development container is easy as copying the content into the project ro
 With VS Code:
 - Edit the `post-create.zsh` script - if needed
 - Run command: `Rebuild and Reopen in Container`
-
-> To get started with your own development container, you will want to have a look at [create a dev container page][ms-devcontainers-create-docs] for full-blown instructions.
 
 ## Feedback
 If you have any technical problems with VS Code or Development Containers, you are better off [asking VS Code Support directly][vscode-support], since you'll end up getting a much faster response back that way.
