@@ -6,11 +6,11 @@ Develop [GitHub Pages][gh-pages-docs] and static websites in Jekyll. This defini
 - [Jekyll][jekyll-cli-docs]
 - Configured to build and run locally with [VS Code tasks][vscode-tasks]
 
-## Requirements
-You will want to have a look at the [minimal set of tools to get started][devcontainers-requirements].
-
-## Using This Definition
-This definition is a flavor of [jekyll definition found in @microsoft/devcontainers][ms-devcontainer-jekyll] with minor tweaks for personal use. Check out the [vscode-remote-try-*][vscode-remote-try-search-query] repositories if you are looking for complete sample projects.
+## Build and Run
+With VS Code:
+- `tasks.json`: Change the port, if needed.
+- Run task: `build` to restore packages and generate the static site
+- Run task: `live-serve` to run the site with hot-reload mode
 
 ## License
 Copyright :copyright: Kosala Nuwan Perera. All rights reserved.
@@ -21,8 +21,4 @@ The source code is license under the [MIT license][lic].
 [gh-pages-docs]: https://guides.github.com/features/pages/
 [jekyll-cli-docs]: https://jekyllrb.com/docs/configuration/options/#build-command-options
 [vscode-tasks]: .vscode/tasks.json
-[nodejs-docs]: https://
-[devcontainers-requirements]: https://github.com/kosalanuwan/devcontainers/#readme
-[ms-devcontainer-jekyll]: https://github.com/microsoft/vscode-dev-containers/tree/master/containers/jekyll
-[vscode-remote-try-search-query]: https://github.com/search?o=desc&q=vscode-remote-try-&s=updated&type=repositories
 [lic]: ../LICENSE
