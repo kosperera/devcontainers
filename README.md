@@ -3,9 +3,6 @@
 
 This repository serves as a flavor of reusable developer containers that are listed on [@microsoft/vscode-dev-containers][ms-devcontainers-repo].
 
-> #### Important
-> To get started with your own development container, you will want to have a look at [create a dev container page][ms-devcontainers-create-docs] for full-blown instructions.
-
 ## Containers
 
 |     | Description
@@ -17,11 +14,23 @@ This repository serves as a flavor of reusable developer containers that are lis
 The [vscode-remote-try-*][vscode-remote-try-search-query] repositories may also be of interest if you are looking for complete sample projects.
 
 ## Requirements
-For [minimal set of tools to get started][ms-devcontainers-min-requirements-page], you will need followings:
+Check out the [system requirements page][ms-devcontainers-min-requirements-page] for a minimal set of tools to get started.
 
-- [VS Code][download-vscode] with [Remote - Containers extension][download-vscode-remote-ext]
-- [Docker Desktop][download-docker-desktop]
-- [Git][download-git]
+## Using Containers
+
+Using a development container is easy as copying the content into the project root, and:
+
+With VS Code:
+- Edit the `post-create.zsh` script - if needed
+- Run command: `Rebuild and Reopen in Container`
+
+> To get started with your own development container, you will want to have a look at [create a dev container page][ms-devcontainers-create-docs] for full-blown instructions.
+
+### `.devcontainer`
+These are configured to use `docker-compose` to spawn development container. Check out the `docker-compose.yml` to learn full-blown configurations.
+
+### `.vscode`
+These development containers are configured to build and run the source within VS Code. Check out the `tasks.json` to learn more.
 
 ## Feedback
 If you have any technical problems with VS Code or Development Containers, you are better off [asking VS Code Support directly][vscode-support], since you'll end up getting a much faster response back that way.
@@ -32,7 +41,9 @@ The official repo to contribute would be [@microsoft/vscode-dev-containers][ms-d
 Have a suggestion or a bug fix? Just open a pull request or an issue. Include the development container with a clear folder name and the simplest instructions possible.
 
 ## License
-License under [MIT][lic]
+Copyright :copyright: Kosala Nuwan Perera. All rights reserved.
+
+The source code is license under the [MIT license][lic].
 
 [ms-devcontainers-min-requirements-page]: https://code.visualstudio.com/docs/remote/containers#_system-requirements
 [ms-devcontainers-docs]: https://code.visualstudio.com/docs/remote/containers
