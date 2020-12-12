@@ -14,7 +14,10 @@ With VS Code:
 - Run task: `build` to restore dependencies, then build the solution
 - Run task: `watch` to run the app in watch mode
 
-### Connecting to sql server
+## Debugging
+You will want to attach the processor to debug the code.
+
+## Connect to SQL Server
 This definition is configured to [hosts MS SQL 2019][mssql-docker] and the VS Code is configured with [SQL Server extension][mssql-vscode-extension] to manage databases.
 
 - You will want to add below connection string to the `appsettings.json`
@@ -23,10 +26,6 @@ This definition is configured to [hosts MS SQL 2019][mssql-docker] and the VS Co
         "DefaultConnection": "Server=localhost,1433;Database=ApplicationDB;User Id=sa;Password=P@ssw0rd"
     }
     ```
-
-
-### Debugging
-You will want to attach the processor to debug the code.
 
 [dotnet-resources]: https://youtu.be/o-esVzL3YLI
 [dotnet-compatibility]: https://docs.microsoft.com/en-us/dotnet/core/compatibility/5.0
