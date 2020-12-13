@@ -22,7 +22,7 @@ With VS Code:
         "IsEncrypted": false,
         "Values": {
             "AzureWebJobsStorage": "UseDevelopmentStorage=true;",
-            "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
+            "AzureWebJobsDashboard": "UseDevelopmentStorage=true;",
             "FUNCTIONS_WORKER_RUNTIME": "dotnet"
         }
     }
