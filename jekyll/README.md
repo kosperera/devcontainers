@@ -10,7 +10,15 @@ Develop [GitHub Pages][gh-pages-docs] and static websites in Jekyll. This defini
 With VS Code:
 - `tasks.json`: Change the port, if needed.
 - Run task: `build` to restore packages and generate the static site
-- Run task: `live-serve` to run the site with hot-reload mode
+- Run task: `live-serve` to run the site in watch and live-reload mode
+
+### Changing `:port`
+This definition runs on port `4000`. This is indicated in several files listed below for obvious reasons:
+
+With VS Code:
+- `task.json`: Change the port in the `live-serve` task
+- `devcontainer.json`: Change the port in `forwardPort`
+- `_config.devcontainer.yml`: Change the port in the `url`
 
 ## License
 Copyright :copyright: Kosala Nuwan Perera. All rights reserved.
