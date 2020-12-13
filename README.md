@@ -5,9 +5,8 @@ This repository serves as a flavor of reusable developer containers that are lis
 
 The [vscode-remote-try-*][vscode-remote-try-search-query] repositories may also be of interest if you are looking for complete sample projects.
 
-To get started with your own development container, you will want to have a look at [create a dev container page][ms-devcontainers-create-docs] for full-blown instructions.
-
 ## Containers
+See the [create a dev container page][ms-devcontainers-create-docs] for full-blown instructions to create your own development container.
 
 |     | Description
 | --- | ---
@@ -16,21 +15,21 @@ To get started with your own development container, you will want to have a look
 | `jekyll` | Ideal for GitHub Pages and static website development with Jekyll.
 
 ## Requirements
-Check out the [system requirements page][ms-devcontainers-min-requirements-page] for a minimal set of tools to get started.
-
-### `.devcontainer`
-These development containers use `docker-compose` to spawn container instances. Check out the `docker-compose.yml` to learn full-blown configurations.
-
-### `.vscode`
-These development containers are configured to build and run the source within VS Code. Check out the `tasks.json` to learn more.
+See the [system requirements page][ms-devcontainers-min-requirements-page] for a minimal set of tools required to get started.
 
 ## Using Containers
 
 Using a development container is easy as copying the content into the project root, and:
 
 With VS Code:
-- Edit the `post-create.zsh` script - if needed
+- Edit the `post-create.zsh` script, if needed
 - Run command: `Rebuild and Reopen in Container`
+
+### `.devcontainer` folder
+These development containers use `docker-compose` to spawn container instances. See the `docker-compose.yml` file inside the folder to learn full-blown configurations.
+
+### `.vscode` folder
+These development containers are configured to build and run the source within VS Code. See the `tasks.json` file inside the folder to learn more.
 
 ## Feedback
 If you have any technical problems with VS Code or Development Containers, you are better off [asking VS Code Support directly][vscode-support], since you'll end up getting a much faster response back that way.
