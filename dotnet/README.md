@@ -22,6 +22,7 @@ This definition is configured to [hosts MS SQL 2019][mssql-docker] and the VS Co
 
 Add below connection string to the `appsettings.json`
 ```json
+# appsettings.json or appsettings.Development.json
 "ConnectionStrings": {
     "DefaultConnection": "Server=localhost,1433;Database=ApplicationDB;User Id=sa;Password=P@ssw0rd"
 }
