@@ -20,9 +20,10 @@ VS Code is configured to prompt the processor to attach when debugging the code.
 ### Connecting to database
 This definition is configured to [hosts MS SQL 2019][mssql-docker] and the VS Code is configured with [SQL Server extension][mssql-vscode-extension] to manage databases.
 
-Add below connection string to the `appsettings.json`
+Add below connection string to `appsettings.json` or `appsettings.Development.json` file:
 ```json
-# appsettings.json or appsettings.Development.json
+// appsettings.json, or
+// appsettings.Development.json
 "ConnectionStrings": {
     "DefaultConnection": "Server=localhost,1433;Database=ApplicationDB;User Id=sa;Password=P@ssw0rd"
 }

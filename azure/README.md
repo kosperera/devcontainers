@@ -17,7 +17,7 @@ This definition requires followings:
 With VS Code:
 - Create a `local.settings.json`, if doesn't exist.
     ```json
-    # local.settings.json
+    // local.settings.json
     {
         "IsEncrypted": false,
         "Values": {
@@ -33,13 +33,13 @@ With VS Code:
 ### Debugging the source
 VS Code is configured to prompt the processor to attach when debugging the code.
 ```json
-# launch.json
+// launch.json
 "processId": "${command:pickProcess}"
 ```
 ### Connecting to local emulator
 Replace the local connection string as below, if the emulator is running locally:
 ```json
-# local.settings.json
+// local.settings.json
 "UseDevelopmentStorage=true;DevelopmentStorageProxyUri=http://host.docker.internal"
 ```
 
