@@ -15,18 +15,7 @@ This definition requires followings:
 
 ## Build and Run
 With VS Code:
-- Create a `local.settings.json`, if doesn't exist.
-    ```json
-    // local.settings.json
-    {
-        "IsEncrypted": false,
-        "Values": {
-            "AzureWebJobsStorage": "UseDevelopmentStorage=true;",
-            "AzureWebJobsDashboard": "UseDevelopmentStorage=true;",
-            "FUNCTIONS_WORKER_RUNTIME": "dotnet"
-        }
-    }
-    ```
+- `local.settings.json`: Change connection strings, create a [local settings file][az-funcs-docs-local-settings] if doesn't exists.
 - `tasks.json`: Change the start up project path in `func start` task.
 - Run task: `func start` to run the azure function in watch mode.
 
@@ -37,7 +26,7 @@ VS Code is configured to prompt the processor to attach when debugging the code.
 "processId": "${command:pickProcess}"
 ```
 ### Connecting to local emulator
-Replace the local connection string as below, if the emulator is running locally:
+Replace the local connection string as below, [if the emulator is running locally][article-tip-connect-local-emulator]:
 ```json
 // local.settings.json
 "UseDevelopmentStorage=true;DevelopmentStorageProxyUri=http://host.docker.internal"
@@ -55,4 +44,6 @@ The source code is license under the [MIT license][lic].
 [ms-azure-devops-signup]: https://
 [download-azure-storage-explorer]: https://
 [vscode-remote-try-search-query]: https://github.com/search?o=desc&q=vscode-remote-try-&s=updated&type=repositories
+[az-funcs-docs-local-settings]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp#local-settings-file
+[article-tip-connect-local-emulator]: https://www.maneu.net/blog/use-local-storage-emulator-remote-container/
 [lic]: ../LICENSE
