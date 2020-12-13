@@ -16,20 +16,31 @@ This definition requires followings:
 ## Build and Run
 With VS Code:
 - Create a `local.settings.json`, if doesn't exist.
+    ```json
+    # local.settings.json
+    {
+        "IsEncrypted": false,
+        "Values": {
+            "AzureWebJobsStorage": "UseDevelopmentStorage=true;",
+            "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
+            "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+        }
+    }
+    ```
 - `tasks.json`: Change the start up project path in `func start` task.
 - Run task: `func start` to run the azure function in watch mode.
 
 ### Debugging the source
 VS Code is configured to prompt the processor to attach when debugging the code.
-
-### Connecting to emulator
-Add the usual connection string to the `local.settings.json`:
 ```json
-"AzureWebJobsStorage": "UseDevelopmentStorage=true;"
+# launch.json
+"processId": "${command:pickProcess}"
 ```
-With Local Emulator:
+### Connecting to local emulator
+Replace the local connection string as below, if the emulator is running locally:
 ```json
-"AzureWebJobsStorage": "UseDevelopmentStorage=true;DevelopmentStorageProxyUri=http://host.docker.internal"
+# local.settings.json
+"UseDevelopmentStorage=true;DevelopmentStorageProxyUri=http://host.docker.internal"
 ```
 
 ## License
