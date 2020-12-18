@@ -16,9 +16,8 @@ With VS Code:
 This definition runs on port `4000`. This is indicated in several files listed below for obvious reasons:
 
 With VS Code:
-- `task.json`: Change the port in the `live-serve` task
 - `devcontainer.json`: Change the port in `forwardPort`
-- `_config.devcontainer.yml`: Change the port in the `url`
+- `_config.devcontainer.yml`: Change the port in the `port`
 
 ## License
 Copyright :copyright: Kosala Nuwan Perera. All rights reserved.

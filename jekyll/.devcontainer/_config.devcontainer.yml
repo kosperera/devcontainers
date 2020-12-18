@@ -1,4 +1,5 @@
-url: http://localhost:4000
+port: 4000
+url: http://localhost
 baseurl: "jekyll"
 repository: kosalanuwan/devcontainer
 
