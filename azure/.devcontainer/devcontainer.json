@@ -38,7 +38,8 @@
         "esbenp.prettier-vscode",
         "streetsidesoftware.code-spell-checker",
         "redhat.fabric8-analytics",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "bierner.github-markdown-preview"
     ],
 
     // Use 'postCreateCommand' to run commands after the container is created.

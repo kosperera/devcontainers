@@ -22,6 +22,7 @@
         "znck.grammarly",
 		"redhat.fabric8-analytics",
         "redhat.vscode-yaml",
+        "bierner.github-markdown-preview"
     ],
     
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
