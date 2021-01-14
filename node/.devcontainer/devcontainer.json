@@ -9,6 +9,12 @@
         "terminal.integrated.shell.linux": "/bin/zsh",
 
         // Extensions
+        "eslint.workingDirectories": [
+            {
+                "directory": "./test-project",
+                "changeProcessCWD": true
+            }
+        ],
         "liveServer.settings.NoBrowser": true,
         "liveServer.settings.port": 5500
     },
