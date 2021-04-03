@@ -9,7 +9,11 @@ services:
       args: 
         INSTALL_ZSH: "true"
         UPGRADE_PACKAGES: "true"
-        
+         
+    environment:
+      DOTNET_CLI_TELEMETRY_OPTOUT: 1
+      DOTNET_NOLOGO: 1
+       
     volumes:
       # Forwards the local Docker socket to the container.
       # - /var/run/docker.sock:/var/run/docker-host.sock 
