@@ -15,6 +15,10 @@ services:
         # On Linux, you may need to update USER_UID and USER_GID below if not your local UID is not 1000.
         USER_UID: 1000
         USER_GID: 1000
+        
+    environment:
+      DOTNET_CLI_TELEMETRY_OPTOUT: 1
+      DOTNET_NOLOGO: 1
 
     volumes:
       - ..:/workspace:cached
@@ -37,6 +41,8 @@ services:
     environment:
       SA_PASSWORD: P@ssw0rd
       ACCEPT_EULA: Y
+      # [Choice] Update 'MSSQL_PID' to pick a MSSQL Edition: Express, Standard, Developer, Enterprise
+      MSSQL_PID: Express
     network_mode: host
 
     # Add "forwardPorts": ["1433"] to **devcontainer.json** to forward MSSQL locally.
