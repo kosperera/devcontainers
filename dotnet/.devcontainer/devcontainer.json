@@ -7,7 +7,7 @@
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
 		"razor.disabled": true,
-		"terminal.integrated.shell.linux": "/bin/zsh",
+		"terminal.integrated.shell.linux": "/usr/bin/zsh",
 		"mssql.connections": [
 			{
 				"server": "localhost,1433",
