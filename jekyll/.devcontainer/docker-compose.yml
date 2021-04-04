@@ -6,8 +6,9 @@ services:
       context: .
       dockerfile: Dockerfile
       # [Optional] You can use build args to set options. e.g. 'INSTALL_ZSH' below affects the image in the Dockerfile
-      # args: 
-      #   UPGRADE_PACKAGES: "true"
+      args: 
+        INSTALL_ZSH: "true"
+        UPGRADE_PACKAGES: "true"
         
     volumes:
       # Forwards the local Docker socket to the container.
