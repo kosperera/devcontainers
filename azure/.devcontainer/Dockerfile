@@ -16,6 +16,6 @@ ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=${USER_UID}
 
-RUN apt-get update && curl -ssL https://raw.githubusercontent.com/microsoft/vscode-dev-containers/b1332682a0679df58390770388769023f2524acd/script-library/common-debian.sh -o /tmp/common-script.sh \
+RUN apt-get update && curl -ssL https://raw.githubusercontent.com/microsoft/vscode-dev-containers/master/script-library/common-debian.sh -o /tmp/common-script.sh \
     && /bin/bash /tmp/common-script.sh "${INSTALL_ZSH}" "${USERNAME}" "${USER_UID}" "${USER_GID}" "${UPGRADE_PACKAGES}" "true" "true" \
     && apt-get clean -y && rm /tmp/common-script.sh 
