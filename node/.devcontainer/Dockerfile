@@ -1,6 +1,7 @@
-# [Choice] Node.js version: 14, 12, 10
+# [Choice] Node.js version
+# https://mcr.microsoft.com/v2/vscode/devcontainers/javascript-node/tags/list
 ARG VARIANT=14
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:${VARIANT}
 
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \

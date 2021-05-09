@@ -6,7 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        # [Choice] Update 'VARIANT' to pick a NODE version: 11, 12, 14
+        # [Choice] Update 'VARIANT' to pick a NODE version
+        # https://mcr.microsoft.com/v2/vscode/devcontainers/javascript-node/tags/list
         VARIANT: 14
         # Options
         INSTALL_ZSH: "true"
