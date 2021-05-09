@@ -26,11 +26,11 @@ With VS Code:
 - Edit the `post-create.zsh` script, if needed
 - Run command: `Rebuild and Reopen in Container`
 
+### Browsing container registry
+Microsoft guide to [Browse the Container Registry][mcr-guide-to-browse] is a good source to learn how the development container images are organized. [See the entire catelog on Docker Hub.][mcr-catelog]
+
 ### `.devcontainer` folder
 These development containers use `docker-compose` to spawn container instances. See the `docker-compose.yml` file inside the folder to learn full-blown configurations.
-
-#### Browse MCR
-[Discover more containers][mcr-catelog] on Docker Hub. [Browsing MCR][mcr-guide-to-browse] is a good source to start.
 
 ### `.vscode` folder
 These development containers are configured to build and run the source within VS Code. See the `tasks.json` file inside the folder to learn more.
