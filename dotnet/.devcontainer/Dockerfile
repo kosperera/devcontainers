@@ -1,6 +1,6 @@
 # [Choice] .NET version
 # https://mcr.microsoft.com/v2/vscode/devcontainers/dotnet/tags/list
-ARG VARIANT=latest
+ARG VARIANT=5.0
 FROM mcr.microsoft.com/vscode/devcontainers/dotnet:${VARIANT}
 
 # [Option] Install Node.js

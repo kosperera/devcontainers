@@ -9,7 +9,7 @@ services:
       args: 
         # [Choice] Update 'VARIANT' to pick a version
         # https://mcr.microsoft.com/v2/azure-functions/dotnet/tags/list
-        VARIANT: latest
+        # VARIANT: latest
         INSTALL_ZSH: "true"
         UPGRADE_PACKAGES: "true"
          
