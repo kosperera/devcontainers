@@ -3,6 +3,7 @@
 
 Develop azure functions in C#. This definition includes:
 - .NET Core 3.1 SDK and runtime
+  > [See available versions][az-funcs-tags]
 - Azure Functions SDK with Core Tools - runtime v3
 - [Azurite][azurite-docs] as for Azure Storage Emulator, and
 - Azure SDK and CLI tools
@@ -37,6 +38,7 @@ Copyright :copyright: Kosala Nuwan Perera. All rights reserved.
 
 The source code is license under the [MIT license][lic].
 
+[az-funcs-tags]: https://mcr.microsoft.com/v2/azure-functions/dotnet/tags/list
 [az-funcs-docs]: https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-csharp?tabs=azure-cli%2Cbrowser
 [azurite-docs]: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite#install-and-run-the-azurite-docker-image
 [devcontainers-requirements]: https://github.com/kosalanuwan/devcontainers/#readme

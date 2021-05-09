@@ -3,6 +3,7 @@
 
 Develop SPA, PWA, and Backend services and apps in JavaScript/TypeScript. This definition includes:
 - NVM and NodeJS
+  > [See available versions][node-js-tags]
 - [ESLint][eslint-docs] for JS
 - [TypeScript][ts-docs]
 - Configured to run locally with [LiveServer][liveserver-docs]
@@ -25,6 +26,7 @@ Copyright :copyright: Kosala Nuwan Perera. All rights reserved.
 The source code is license under the [MIT license][lic].
 
 [node-js-resources]: https://github.com/topics/node?l=javascript
+[node-js-tags]: https://mcr.microsoft.com/v2/vscode/devcontainers/javascript-node/tags/list
 [eslint-docs]: https://
 [ts-docs]: https://
 [liveserver-docs]: https://

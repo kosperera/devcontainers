@@ -29,6 +29,9 @@ With VS Code:
 ### `.devcontainer` folder
 These development containers use `docker-compose` to spawn container instances. See the `docker-compose.yml` file inside the folder to learn full-blown configurations.
 
+#### Browse MCR
+[Discover more containers][mcr-catelog] on Docker Hub. [Browsing MCR][mcr-guide-to-browse] is a good source to start.
+
 ### `.vscode` folder
 These development containers are configured to build and run the source within VS Code. See the `tasks.json` file inside the folder to learn more.
 
@@ -49,6 +52,8 @@ The source code is license under the [MIT license][lic].
 [ms-devcontainers-docs]: https://code.visualstudio.com/docs/remote/containers
 [ms-devcontainers-create-docs]: https://code.visualstudio.com/docs/remote/create-dev-container
 [ms-devcontainers-repo]: https://github.com/microsoft/vscode-dev-containers#readme
+[mcr-catelog]: https://mcr.microsoft.com/v2/_catalog
+[mcr-guide-to-browse]: https://github.com/microsoft/containerregistry#browsing-mcr-content
 [vscode-support]: https://github.com/microsoft/vscode-dev-containers#contributing-and-feedback
 [vscode-remote-try-search-query]: https://github.com/search?o=desc&q=vscode-remote-try-&s=updated&type=repositories
 
