@@ -4,7 +4,7 @@
 Develop .NET apps in C#. This definition includes:
 - [.NET SDK and runtime][dotnet-compatibility]
   > [See available versions][dotnet-tags]
-- [MS SQL 2019][mssql-docker] databases
+- [MS SQL 2019 Express][mssql-docker] databases
 - [Node.js][nodejs-docs] with NPM and Yarn package managers
 - Azure CLI tools for publishing and managing cloud resources
 
@@ -36,7 +36,7 @@ The source code is license under the [MIT license][lic].
 
 [dotnet-resources]: https://youtu.be/o-esVzL3YLI
 [dotnet-compatibility]: https://docs.microsoft.com/en-us/dotnet/core/compatibility/5.0
-[dotnet-tags]: https://mcr.microsoft.com/v2/vscode/devcontainers/dotnet/tags/list
+[dotnet-tags]: https://mcr.microsoft.com/v2/dotnet/sdk/tags/list
 [mssql-docker]: https://docs.microsoft.com/en-us/sql/tools/visual-studio-code/sql-server-develop-use-vscode?view=sql-server-ver15
 [mssql-vscode-extension]: https://
 [nodejs-docs]: https://
