@@ -7,14 +7,14 @@ services:
       dockerfile: Dockerfile
       args:
         # [Choice] Update 'VARIANT' to pick a .NET version
-        # https://mcr.microsoft.com/v2/vscode/devcontainers/dotnet/tags/list
-        # VARIANT: latest
+        # https://mcr.microsoft.com/v2/dotnet/sdk/tags/list
+        # VARIANT: 6.0.100-preview.3
         # Options
         INSTALL_ZSH: "true"
         UPGRADE_PACKAGES: "true"
-        INSTALL_NODE: "true"
+        INSTALL_NODE: "false"
         NODE_VERSION: "14"
-        INSTALL_AZURE_CLI: "true"
+        INSTALL_AZURE_CLI: "false"
         # On Linux, you may need to update USER_UID and USER_GID below if not your local UID is not 1000.
         USER_UID: 1000
         USER_GID: 1000
