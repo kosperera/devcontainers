@@ -13,8 +13,8 @@ FROM mcr.microsoft.com/azure-functions/dotnet:${VARIANT}
 
 # # Comment out these lines if you want to use zsh.
 
-ARG INSTALL_ZSH=false
-ARG UPGRADE_PACKAGES=false
+ARG INSTALL_ZSH=true
+ARG UPGRADE_PACKAGES=true
 ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=${USER_UID}
