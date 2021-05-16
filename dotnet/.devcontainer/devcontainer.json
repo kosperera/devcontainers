@@ -68,8 +68,8 @@
 	//      2. Drag ~/.aspnet/https/aspnetapp.pfx into the root of the file explorer
 	//      3. Open a terminal in VS Code and run "mkdir -p /home/vscode/.aspnet/https && mv aspnetapp.pfx /home/vscode/.aspnet/https"
 
-	// postCreateCommand.sh parameters: $1=SA password, $2=dacpac path, $3=sql script(s) path
-	"postCreateCommand": "zsh .devcontainer/mssql/postCreateCommand.sh 'P@ssw0rd' './bin/Debug/' './.devcontainer/mssql/",
+    // Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "zsh .devcontainer/post-create.zsh",
 	// Uncomment to indicates whether VS Code should stop the containers when the VS Code window is closed / shut down. Values are "none" and "stopCompose" (default).
 	"shutdownAction": "stopCompose"
 
