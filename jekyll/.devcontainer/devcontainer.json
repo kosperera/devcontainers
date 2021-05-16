@@ -28,7 +28,7 @@
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     "forwardPorts": [4000],
     // Uncomment to run commands after the container is created - requires a Gemfile
-    "postCreateCommand": "zsh .devcontainer/post-create.zsh",
+    // "postCreateCommand": "bundle install",
 
     // Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
     // "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
