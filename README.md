@@ -11,7 +11,8 @@ See the [create a dev container page][ms-devcontainers-create-docs] for full-blo
 |     | Description
 | --- | ---
 | `azure` | Azure Functions for event-driven development. Also includes Core Tools, .NET Core 3.1, and Azurite Emulator.
-| `dotnet` | Ideal for the .NET development. Also includes MSSQL, Node.js, and Azure CLI to managing cloud resources.
+| `dotnet` | Ideal for the .NET development. Also Node.js, and Azure CLI to managing cloud resources.
+| `dotnet-mssql` | Ideal for the .NET development with MSSQL. Includes everything that has `dotnet` definition.
 | `jekyll` | Ideal for GitHub Pages and static website development with Jekyll.
 | `node` | Ideal for the Node and JavaScript development. Also includes linters for JS and TS.
 

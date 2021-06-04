@@ -1,5 +1,5 @@
 {
-    "name": "Azure Functions",
+    "name": ".NET Azure Functions",
     "dockerComposeFile": "docker-compose.yml",
     "remoteEnv": {
         "DOTNET_CLI_TELEMETRY_OPTOUT": "false",
@@ -13,7 +13,6 @@
     // Set *default* container specific settings.json values on container create.
     "settings": {
         "razor.disabled": true,
-        "terminal.integrated.shell.linux": "/usr/bin/zsh",
         "azurite.debug": true,
         "azureFunctions.projectLanguage": "C#",
         "azureFunctions.projectRuntime": "~3",
