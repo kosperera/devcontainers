@@ -1,5 +1,5 @@
 {
-	"name": "C# (.NET) and MS SQL",
+	"name": ".NET",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspace",
@@ -7,19 +7,6 @@
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
 		"razor.disabled": true,
-		"terminal.integrated.shell.linux": "/usr/bin/zsh",
-		"mssql.connections": [
-			{
-				"server": "localhost,1433",
-				"database": "",
-				"authenticationType": "SqlLogin",
-				"user": "sa",
-				"password": "P@ssw0rd",
-				"emptyPasswordInput": false,
-				"savePassword": false,
-				"profileName": "mssql-container"
-			}
-		]
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
@@ -29,8 +16,6 @@
 		"ms-azuretools.vscode-docker",
 		"ms-vscode.azurecli",
 		"humao.rest-client",
-
-		"ms-mssql.mssql",
 
 		"christian-kohler.npm-intellisense",
 		"eg2.vscode-npm-script",
@@ -47,7 +32,7 @@
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5000, 5001, 1433],
+	"forwardPorts": [5000, 5001],
 
 	// [Optional] To reuse of your local HTTPS dev cert:
 	//
