@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
       # [Optional] You can use build args to set options. e.g. 'INSTALL_ZSH' below affects the image in the Dockerfile
-      args: 
+      # args: 
         # [Choice] Update 'VARIANT' to pick a version
         # https://mcr.microsoft.com/v2/azure-functions/dotnet/tags/list
         # VARIANT: latest
