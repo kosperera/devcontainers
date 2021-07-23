@@ -7,3 +7,5 @@ repository: kosalanuwan/devcontainer
 show_drafts: true
 future: true
 unpublished: true
+
+github: [metadata]
