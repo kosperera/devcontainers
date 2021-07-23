@@ -2,9 +2,10 @@
 [<img align="right" alt=".NET" width="128rem" src="https://avatars3.githubusercontent.com/u/3083652?s=200&v=4" />][jekyll-resources]
 
 Develop [GitHub Pages][gh-pages-docs] and static websites in Jekyll. This definition includes:
-- Ruby and Bundler
+- Ruby 2.7.2 and Bundler
 - [Jekyll][jekyll-cli-docs]
 - Configured to build and run locally with [VS Code tasks][vscode-tasks]
+- Configured to run on Apple M1
 
 ## Build and Run
 With VS Code:
