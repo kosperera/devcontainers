@@ -29,6 +29,7 @@
         "ms-azuretools.vscode-azurefunctions",
         "ms-azuretools.vscode-docker",
         "ms-vscode.azurecli",
+        "ms-edgedevtools.vscode-edge-devtools",
         "humao.rest-client",
 
         "ms-azuretools.vscode-azurestorage",

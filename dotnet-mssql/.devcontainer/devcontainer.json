@@ -28,6 +28,7 @@
 		"ms-dotnettools.vscode-dotnet-runtime",
 		"ms-azuretools.vscode-docker",
 		"ms-vscode.azurecli",
+		"ms-edgedevtools.vscode-edge-devtools",
 		"humao.rest-client",
 
 		"ms-mssql.mssql",
