@@ -10,6 +10,10 @@
             // See https://jekyllrb.com/docs/configuration/options/#build-command-options
             // for the documentation about jekyll build options
             "command": "bundle exec jekyll s -l --config _config.yml,.devcontainer/_config.devcontainer.yml --trace",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
             "isBackground": true,
         },
         {
