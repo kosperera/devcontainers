@@ -1,5 +1,8 @@
 {
-    "name": "Node.js",
+    "name": "Node.js (TypeScript)",
+
+    "runArgs": ["--init"],
+
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/workspace",
@@ -8,6 +11,10 @@
     "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
         // Extensions
+        "eslint.validate": [
+            "javascript",
+            "typescript"
+        ],
         "eslint.workingDirectories": [
             {
                 "directory": "./test-project",

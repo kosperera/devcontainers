@@ -1,4 +1,4 @@
-# Node (JS/TS)
+# NodeJS (TypeScript)
 [<img align="right" alt=".NET" width="128rem" src="https://avatars.githubusercontent.com/u/9950313?s=200&v=4" />][node-js-resources]
 
 Develop SPA, PWA, and Backend services and apps in JavaScript/TypeScript. This definition includes:
@@ -18,7 +18,7 @@ This definition runs on port `5500`. This is indicated in several places listed 
 
 With VS Code:
 
-Open `devcontainer.js`, then change the port in `forwardPort` and `iveServer.settings.port`.
+Open `devcontainer.js`, then change the port in `forwardPort` and `liveServer.settings.port`.
 
 ## License
 Copyright :copyright: Kosala Nuwan Perera. All rights reserved.

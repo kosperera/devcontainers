@@ -8,13 +8,9 @@ services:
       args:
         # [Choice] Update 'VARIANT' to pick a NODE version
         # https://mcr.microsoft.com/v2/vscode/devcontainers/javascript-node/tags/list
-        # VARIANT: latest
-        # Options
-        INSTALL_ZSH: "true"
-        UPGRADE_PACKAGES: "true"
-        # On Linux, you may need to update USER_UID and USER_GID below if not your local UID is not 1000.
-        USER_UID: 1000
-        USER_GID: 1000
+        VARIANT: 16-bullseye
+        # INSTALL_ZSH: "true"
+        # UPGRADE_PACKAGES: "true"
 
     volumes:
       - ..:/workspace:cached
