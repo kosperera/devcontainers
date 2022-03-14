@@ -23,14 +23,14 @@
         {
             "label": "clean release",
             "command": "dotnet",
-            "args": ["clean", "--configuration", "Release", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary"],
+            "args": ["clean", "-c", "Release", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary"],
             "type": "process",
             "problemMatcher": "$msCompile"
         },
         {
             "label": "publish",
             "command": "dotnet",
-            "args": ["publish", "--configuration", "Release", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary"],
+            "args": ["publish", "-c", "Release", "/property:GenerateFullPaths=true", "/consoleloggerparameters:NoSummary"],
             "type": "process",
             "dependsOn": "clean release",
             "problemMatcher": "$msCompile"
@@ -39,7 +39,7 @@
             "label": "watch",
             "command": "dotnet",
             "type": "process",
-            "args": ["watch", "--project", "${workspaceFolder}/test-project/aspnetapp.csproj", "run"],
+            "args": ["watch", "--project", "${workspaceFolder}/test-project/test-project.csproj", "run"],
             "problemMatcher": "$msCompile",
             "isBackground": true
         }
