@@ -12,11 +12,8 @@
 			"installZsh": true,
 			"upgradePackages": true,
 		},
+		"dotnet": "6.0",
 		"github-cli": "latest",
-		// "node": {
-		// 	"version": "lts",
-		// 	"nodeGypDependencies": true
-		// },
 		"azure-cli": "latest"
 	},
 	// Set *default* container specific settings.json values on container create.
@@ -30,7 +27,9 @@
     	"omnisharp.organizeImportsOnFormat": true,
 		"omnisharp.useEditorFormattingSettings": true,
 		"omnisharp.useModernNet": true,
+
 		"razor.disabled": true,
+
 		"terminal.integrated.defaultProfile.linux": "zsh",
 	},
 

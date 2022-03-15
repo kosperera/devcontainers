@@ -17,7 +17,13 @@ With VS Code:
 VS Code is configured to prompt the processor to attach when debugging the code.
 
 ### Connecting to database
-Try the `dotnet-mssql` definition which is configured to [hosts MS SQL 2019][mssql-docker].
+Try the Azure SQL Edge on Docker which supports ARM devices. In fact, this definition already include MSSQL using the Azure SQL Edge image from Docker Hub.
+
+## Known issues
+
+Sometimes the VS Code shows a lot of errors tho `dotnet` builds and runs the code without any issues. This is due to a known issue. Read more at https://github.com/OmniSharp/omnisharp-vscode/issues/3143#issuecomment-513501863.
+
+Omnisharp has limited support on ARM devices such as Apple M1. However, there's a fix as the moment that supports `net6.0` and above. Read more at https://github.com/OmniSharp/omnisharp-vscode/issues/4348#issuecomment-1003867594.
 
 ## License
 Copyright :copyright: Kosala Nuwan Perera. All rights reserved.
