@@ -13,10 +13,13 @@
 			"installZsh": true,
 			"upgradePackages": true,
 		},
-		"github-cli": "latest",
-
 		// GitHub Pages dependencies https://pages.github.com/versions/
 		"ruby": "2.7.3",
+		"node": {
+			"version": "lts",
+        	"nodeGypDependencies": true,
+		},
+		"github-cli": "latest",
 	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
