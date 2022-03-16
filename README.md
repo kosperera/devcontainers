@@ -17,7 +17,7 @@ See the [create a dev container page][ms-devcontainers-create-docs] for full-blo
 | `dotnet` | Ideal for the .NET development. Also include GitHub CLI, Azure CLI, Node.js, and extensions for VS Code to managing pipelines and cloud resources.
 | `gh-pages` | Ideal for GitHub Pages and static website development with Jekyll.
 | `sql-server` | Moved to [dotfiles][repo-dotfiles] repo.
-| `typescript` | Ideal for the TypeScript-based development on Node.js. Also includes linters for JS and TS.
+| `typescript-node` | Ideal for the TypeScript-based development on Node.js. Also includes linters for JS and TS.
 
 ## Requirements
 See the [system requirements page][ms-devcontainers-min-requirements-page] for a minimal set of tools required to get started.
