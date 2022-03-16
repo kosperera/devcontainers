@@ -20,7 +20,14 @@
 			"installZsh": true,
 			"upgradePackages": true,
 		},
-		"dotnet": "6.0",
+		"dotnet": {
+			"version": "6.0",
+      		"runtimeOnly": false
+		},
+		"node": {
+			"version": "none",
+        	"nodeGypDependencies": true,
+		},
 		"github-cli": "latest",
 		"azure-cli": "latest"
 	},
