@@ -1,0 +1,46 @@
+{
+	"name": "ARM-based (Bullseye)",
+	"image": "mcr.microsoft.com/vscode/devcontainers/base:dev-bullseye",
+	
+    "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace",
+	
+	"features": {
+		"common": {
+			"username": "automatic",
+			"uid": "automatic",
+			"gid": "automatic",
+			"installZsh": true,
+			"upgradePackages": true,
+		},
+		"github-cli": "latest",
+	},
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "zsh",
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [		
+		"humao.rest-client",
+
+		"ms-vscode.wordcount",
+		"editorconfig.editorconfig",
+		"esbenp.prettier-vscode",
+		"streetsidesoftware.code-spell-checker",
+		"redhat.fabric8-analytics",
+		"redhat.vscode-yaml",
+		"bierner.github-markdown-preview",
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [5000, 5001],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "zsh .devcontainer/post-create.zsh",
+	// Uncomment to indicates whether VS Code should stop the containers when the VS Code window is closed / shut down. Values are "none" and "stopCompose" (default).
+	"shutdownAction": "stopCompose",
+
+	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}
