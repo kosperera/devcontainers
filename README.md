@@ -12,18 +12,19 @@ See the [create a dev container page][ms-devcontainers-create-docs] for full-blo
 
 |     | Description
 | --- | ---
+| `arm` | A sandbox based on bullseye for Apple Silicon and other ARM-based devices. Also can be used as a template.
 | `azure` | Azure Functions for event-driven development. Also includes Core Tools, .NET Core 3.1, and Azurite Emulator.
-| `dotnet` | Ideal for the .NET development. Also Node.js, and Azure CLI to managing cloud resources.
-| `dotnet-mssql` | Ideal for the .NET development with MSSQL. Includes everything that has `dotnet` definition.
+| `dotnet` | Ideal for the .NET development. Also include GitHub CLI, Azure CLI, Node.js, and extensions for VS Code to managing pipelines and cloud resources.
 | `gh-pages` | Ideal for GitHub Pages and static website development with Jekyll.
-| `node-ts` | Ideal for the Node and JavaScript development. Includes TypeScript, and linters for JS and TS.
+| `sql-server` | Moved to [dotfiles][repo-dotfiles] repo.
+| `typescript` | Ideal for the TypeScript-based development on Node.js. Also includes linters for JS and TS.
 
 ## Requirements
 See the [system requirements page][ms-devcontainers-min-requirements-page] for a minimal set of tools required to get started.
 
 ## Using Containers
 
-Using a development container is easy as copying the content into the project root, and:
+Using a dev container is easy as copying the content into the project root, and:
 
 With VS Code:
 - Edit the `post-create.zsh` script, if needed
@@ -31,19 +32,19 @@ With VS Code:
 
 ### Browsing container registry
 
-Microsoft guide to [Browse the Container Registry][mcr-guide-to-browse] is a good source to learn how the development container images are organized. [See the entire catelog on Docker Hub.][mcr-catelog]
+Microsoft guide to [Browse the Container Registry][mcr-guide-to-browse] is a good source to learn how the dev container images are organized. [See the entire catelog on Docker Hub.][mcr-catelog]
 
 ### `.devcontainer` folder
 
-These development containers use `docker-compose` to spawn container instances. See the `docker-compose.yml` file inside the folder to learn full-blown configurations.
+These dev containers [use container features][ms-devcontainers-use-features-docs] to mix and match sandboxes, and avoid the use of `docker compose` to construct and spawn container instances. See the `devcontainer.json` file inside the folder to learn full-blown configurations.
 
 ### `.vscode` folder
 
-These development containers are configured to build and run the source within VS Code. See the `tasks.json` file inside the folder to learn more.
+These dev containers are configured to build and run the source within VS Code. See the `tasks.json` file inside the folder to learn more.
 
 ## Feedback
 
-If you have any technical problems with VS Code or Development Containers, you are better off [asking VS Code Support directly][vscode-support], since you'll end up getting a much faster response back that way.
+If you have any technical problems with VS Code or Dev Containers, you are better off [asking VS Code Support directly][vscode-support], since you'll end up getting a much faster response back that way.
 
 ## Contributing
 
@@ -60,6 +61,7 @@ The source code is license under the [MIT license][lic].
 [ms-devcontainers-min-requirements-page]: https://code.visualstudio.com/docs/remote/containers#_system-requirements
 [ms-devcontainers-docs]: https://code.visualstudio.com/docs/remote/containers
 [ms-devcontainers-create-docs]: https://code.visualstudio.com/docs/remote/create-dev-container
+[ms-devcontainers-use-features-docs]: https://code.visualstudio.com/docs/remote/containers#_dev-container-features-preview
 [ms-devcontainers-repo]: https://github.com/microsoft/vscode-dev-containers#readme
 [mcr-catelog]: https://hub.docker.com/_/microsoft-vscode-devcontainers
 [mcr-guide-to-browse]: https://github.com/microsoft/containerregistry#browsing-mcr-content
@@ -70,5 +72,7 @@ The source code is license under the [MIT license][lic].
 [download-vscode-remote-ext]: https://aka.ms/vscode-remote/download/containers
 [download-docker-desktop]: https://www.docker.com/products/docker-desktop
 [download-git]: https://git-scm.com/downloads
+
+[repo-dotfiles]: https://github.com/kosalanuwan/dotfiles#readme
 
 [lic]: LICENSE
