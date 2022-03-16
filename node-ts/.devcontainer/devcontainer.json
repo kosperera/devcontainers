@@ -1,14 +1,22 @@
 {
-    "name": "Node.js (TypeScript)",
-
-    "runArgs": ["--init"],
-
-    "dockerComposeFile": "docker-compose.yml",
-    "service": "app",
+    "name": "Node.js (TS)",
+	"image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:dev-bullseye",
+    
+    "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
     "workspaceFolder": "/workspace",
 
-    // Set *default* container specific settings.json values on container create.
-    "settings": {
+	"features": {
+		"common": {
+			"username": "automatic",
+			"uid": "automatic",
+			"gid": "automatic",
+			"installZsh": true,
+			"upgradePackages": true,
+		},
+		"github-cli": "latest",
+	},
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
         "terminal.integrated.defaultProfile.linux": "zsh",
         // Extensions
         "eslint.validate": [
@@ -35,6 +43,8 @@
         "ritwickdey.liveserver",
         "ritwickdey.live-sass",
         "ms-edgedevtools.vscode-edge-devtools",
+
+		"humao.rest-client",
 
         "visualstudioexptteam.vscodeintellicode",
         "ms-vscode.wordcount",
