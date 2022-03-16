@@ -41,6 +41,9 @@
 		"omnisharp.enableRoslynAnalyzers": true,
     	"omnisharp.organizeImportsOnFormat": true,
 		"omnisharp.useEditorFormattingSettings": true,
+
+		// Fix for ARM-based devices.
+		// Read more https://github.com/OmniSharp/omnisharp-vscode/issues/4348#issuecomment-1003867594
 		"omnisharp.useModernNet": true,
 
 		"razor.disabled": true,
