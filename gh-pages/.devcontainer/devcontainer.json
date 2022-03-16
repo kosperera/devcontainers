@@ -1,5 +1,5 @@
 {
-	"name": "Jekyll (GitHub Pages)",
+	"name": "GitHub Pages (Jekyll)",
 	"image": "mcr.microsoft.com/vscode/devcontainers/base:dev-bullseye",
 	
     "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
