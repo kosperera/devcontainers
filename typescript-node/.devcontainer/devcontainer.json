@@ -1,5 +1,5 @@
 {
-    "name": "TypeScript (Node.js)",
+    "name": "Node.js (TS/ES)",
 	"image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:dev-bullseye",
     
     "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
