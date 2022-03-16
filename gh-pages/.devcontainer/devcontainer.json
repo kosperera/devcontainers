@@ -1,7 +1,8 @@
 {
 	"name": "Jekyll (GitHub Pages)",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "website",
+	"image": "mcr.microsoft.com/vscode/devcontainers/base:dev-bullseye",
+	
+    "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
 	"workspaceFolder": "/workspace",
 
 	"features": {
