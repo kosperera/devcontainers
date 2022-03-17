@@ -1,47 +1,91 @@
 {
-    "name": ".NET Azure Functions",
-    "dockerComposeFile": "docker-compose.yml",
-    "remoteEnv": {
-        "DOTNET_CLI_TELEMETRY_OPTOUT": "false",
-        "DOTNET_NOLOGO": "false"
-    },
-    "service": "app",
-    "workspaceFolder": "/workspace",
+    "name": ".NET Azure Functions (Isolated)",
+	"image": "mcr.microsoft.com/azure-functions/dotnet-isolated:4-dotnet-isolated6.0-core-tools",
 
-    "forwardPorts": [7071, 10000, 10001, 10002],
+    "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace",
+	
+	"containerEnv":{
+		"ASPNETCORE_URLS": "https://+:5001;http://+:5000",
+      	"ASPNETCORE_ENVIRONMENT": "Development",
+      	"DOTNET_CLI_TELEMETRY_OPTOUT": 1,
+      	"DOTNET_NOLOGO": 1,
+	},
+
+	"features": {
+		"common": {
+			"username": "automatic",
+			"uid": "automatic",
+			"gid": "automatic",
+			"installZsh": true,
+			"upgradePackages": true,
+		},
+		"github-cli": "latest",
+	},
+
+    "forwardPorts": [7071],
 
     // Set *default* container specific settings.json values on container create.
     "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh",
+		"files.associations": {
+			"**/ci/*.yml": "azure-pipelines"
+		},
         
-        "razor.disabled": true,
         "azurite.debug": true,
+
         "azureFunctions.projectLanguage": "C#",
-        "azureFunctions.projectRuntime": "~3",
+        "azureFunctions.projectRuntime": "~4",
         "debug.internalConsoleOptions": "neverOpen",
-        "azureFunctions.preDeployTask": "publish"
+        "azureFunctions.preDeployTask": "publish",
+
+		"omnisharp.enableAsyncCompletion": true,
+		"omnisharp.enableImportCompletion": true,
+		"omnisharp.enableRoslynAnalyzers": true,
+    	"omnisharp.organizeImportsOnFormat": true,
+		"omnisharp.useEditorFormattingSettings": true,
+
+		// Fix for ARM-based devices.
+		// Read more https://github.com/OmniSharp/omnisharp-vscode/issues/4348#issuecomment-1003867594
+		"omnisharp.useModernNet": true,
+
+		"razor.disabled": true,
+
+		"terminal.integrated.defaultProfile.linux": "zsh",
     },
 
     // Add the IDs of extensions you want installed when the container is created.
     "extensions": [
-        "ms-dotnettools.csharp",
-        "ms-dotnettools.vscode-dotnet-runtime",
-        "ms-azuretools.vscode-azurefunctions",
-        "ms-azuretools.vscode-docker",
-        "ms-vscode.azurecli",
-        "ms-edgedevtools.vscode-edge-devtools",
-        "humao.rest-client",
+		"visualstudioexptteam.vscodeintellicode",
+		"visualstudiotxptteam.vscodeintellicode-completions",
+		"ms-dotnettools.csharp",
+		"ms-dotnettools.vscode-dotnet-runtime",
+		"ms-edgedevtools.vscode-edge-devtools",
+		
+		"humao.rest-client",
+		
+		"ms-vscode.azurecli",
+		"ms-azuretools.vscode-azureappservice",
+		"ms-azuretools.vscode-azureserverlesspack",
 
         "ms-azuretools.vscode-azurestorage",
+        "azurite.azurite",
+		
+        "ms-azuretools.vscode-azureresourcegroups",
+		"ms-azuretools.vscode-azurevirtualmachines",
+        "bencoleman.armview",
 
-        "visualstudioexptteam.vscodeintellicode",
-        "ms-vscode.wordcount",
-        "editorconfig.editorconfig",
-        "esbenp.prettier-vscode",
-        "streetsidesoftware.code-spell-checker",
-        "redhat.fabric8-analytics",
-        "redhat.vscode-yaml",
-        "bierner.github-markdown-preview"
+		"ms-azure-devops.azure-pipelines",
+        "ms-mssql.sql-database-projects-vscode",
+		
+        "ms-dotnettools.dotnet-interactive-vscode",
+
+		"ms-vscode.wordcount",
+		"editorconfig.editorconfig",
+		"esbenp.prettier-vscode",
+		"streetsidesoftware.code-spell-checker",
+		"redhat.fabric8-analytics",
+		"redhat.vscode-yaml",
+		"bierner.github-markdown-preview",
     ],
 
     // Use 'postCreateCommand' to run commands after the container is created.
