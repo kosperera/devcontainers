@@ -13,7 +13,7 @@ See the [create a dev container page][ms-devcontainers-create-docs] for full-blo
 |     | Description
 | --- | ---
 | `arm` | A sandbox based on bullseye for Apple Silicon and other ARM-based devices. Also can be used as a template.
-| `azure` | Azure Functions for event-driven development. Also includes Core Tools, .NET Core 3.1, and Azurite Emulator.
+| `azure-func-dotnet-iso` | Specifically built for Azure Serverless stack including Azure CLI, Azure Func, Core Tools, .NET 6, and Azurite Emulator.
 | `dotnet` | Ideal for the .NET development. Also include GitHub CLI, Azure CLI, Node.js, and extensions for VS Code to managing pipelines and cloud resources.
 | `gh-pages` | Ideal for GitHub Pages and static website development with Jekyll.
 | `sql-server` | Moved to [dotfiles][repo-dotfiles] repo.
