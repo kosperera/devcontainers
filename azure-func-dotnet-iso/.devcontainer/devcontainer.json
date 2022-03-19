@@ -5,10 +5,20 @@
     "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,consistency=cached",
     "workspaceFolder": "/workspace",
 	
-	"containerEnv":{
+	"containerEnv": {
+		// Set Azure Severless environment settings.
+		"AZURE_FUNCTIONS_ENVIRONMENT": "Development",
+		"FUNCTION_APP_EDIT_MODE": "readonly",
+		"FUNCTIONS_EXTENSION_VERSION": "~4",
+		"FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+
+		// Set ASP.NET environment settings.
 		"ASPNETCORE_URLS": "https://+:5001;http://+:5000",
       	"ASPNETCORE_ENVIRONMENT": "Development",
-      	"DOTNET_CLI_TELEMETRY_OPTOUT": 1,
+      	
+		// Set dotnet CLI environment settings.
+		"DOTNET_CLI_TELEMETRY_OPTOUT": 1,
+		"DOTNET_GENERATE_ASPNET_CERTIFICATE": 1,
       	"DOTNET_NOLOGO": 1,
 	},
 
@@ -75,7 +85,9 @@
         "bencoleman.armview",
 
 		"ms-azure-devops.azure-pipelines",
-        "ms-mssql.sql-database-projects-vscode",
+		// This ext is bundled with mssql and will be installed automatically.
+		// Database projects can be handled via Azure Data Studio.
+        // "ms-mssql.sql-database-projects-vscode",
 		
         "ms-dotnettools.dotnet-interactive-vscode",
 
